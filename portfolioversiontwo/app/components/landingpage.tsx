@@ -22,7 +22,7 @@ const Landingabout = () => {
           ease: [0, 0, 0.2, 1],
         }}
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/assets/asset 1.png')" }}
+        style={{ backgroundImage: "url('/assets/asset1.png')" }}
       />
 
       {/* CONTENT (fade + scale AFTER bg) */}

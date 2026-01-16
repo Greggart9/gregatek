@@ -19,7 +19,7 @@ const Navbar = () => {
           flex items-center justify-between
           w-[910px] h-[61px]
           rounded-xl
-          border-2 border-gray-900
+          border-2 border-gray-700
           bg-black
           px-4 py-3
           font-sans text-white

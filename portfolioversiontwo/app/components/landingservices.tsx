@@ -93,7 +93,7 @@ const Landingservices = () => {
                     <p className='text-base w-[20%] leading-6 font-medium text-gray-400'>Everyday tools that we used for every projects</p>
                         <LogoMarquee
                             logos={logos}
-                            speed={5}
+                            speed={10}
                             className="w-[77%]"
                             />
 

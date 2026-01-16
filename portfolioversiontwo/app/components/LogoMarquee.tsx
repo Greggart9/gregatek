@@ -1,6 +1,7 @@
-"use client"
+'use client'
 
-import { motion, useAnimation } from "framer-motion"
+import { motion, useAnimation } from 'framer-motion'
+import { useEffect } from 'react'
 
 type LogoMarqueeProps = {
   logos: string[]
@@ -10,17 +11,17 @@ type LogoMarqueeProps = {
 
 export default function LogoMarquee({
   logos,
-  speed = 15,
-  className = "",
+  speed = 18,
+  className = '',
 }: LogoMarqueeProps) {
   const controls = useAnimation()
 
   const startForward = () => {
     controls.start({
-      x: ["0%", "-50%"],
+      x: ['0%', '-50%'],
       transition: {
         duration: speed,
-        ease: "linear",
+        ease: 'linear',
         repeat: Infinity,
       },
     })
@@ -28,36 +29,40 @@ export default function LogoMarquee({
 
   const startReverse = () => {
     controls.start({
-      x: ["-50%", "0%"],
+      x: ['-50%', '0%'],
       transition: {
         duration: speed,
-        ease: "linear",
+        ease: 'linear',
         repeat: Infinity,
       },
     })
   }
 
+  // start animation on mount
+  useEffect(() => {
+    startForward()
+  }, [])
+
   return (
     <div
-      className={`relative overflow-hidden flex justify-center  ${className}`}
+      className={`relative overflow-hidden ${className}`}
       onMouseEnter={startReverse}
       onMouseLeave={startForward}
     >
-      {/* fade edges */}
-
+      {/* Fade edges */}
+      <div className="pointer-events-none absolute inset-0 z-10 
+        " />
 
       <motion.div
-        className="flex w-max gap-10"
+        className="flex w-max items-center gap-14 px-6"
         animate={controls}
-        initial={false}
-        onViewportEnter={startForward}
       >
         {[...logos, ...logos].map((src, i) => (
           <img
             key={i}
             src={src}
             alt=""
-            className="h-14 w-auto opacity-95"
+            className="h-12 w-auto transition"
           />
         ))}
       </motion.div>

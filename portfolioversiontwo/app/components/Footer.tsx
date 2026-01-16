@@ -75,7 +75,7 @@ const Footer = () => {
         </div>
 
         {/* LEFT */}
-        <div className="flex font-semibold gap-10">
+        <div className="flex font-semibold gap-10 ">
 
         {/* Contact */}
         <div className="space-y-3">

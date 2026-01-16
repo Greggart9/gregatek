@@ -8,7 +8,7 @@ type Props = {
 
 export default function TeamCard({ name, role, image }: Props) {
   return (
-    <div className="relative w-[260px] h-[360px] rounded-2xl overflow-hidden shrink-0">
+    <div className="relative w-65 h-90 rounded-2xl overflow-hidden shrink-0">
       <Image
         src={image}
         alt={name}
@@ -16,7 +16,7 @@ export default function TeamCard({ name, role, image }: Props) {
         className="object-cover"
       />
 
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+      <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent" />
 
       <div className="absolute bottom-5 left-5 text-white">
         <h3 className="text-lg font-semibold">{name}</h3>

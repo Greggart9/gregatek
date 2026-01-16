@@ -11,7 +11,7 @@ const Footer = () => {
     <div className='flex flex-col '>
     <section className="relative  flex h-142 items-center justify-center overflow-hidden bg-black">
       {/* dotted background */}
-      <div className="absolute  inset-0 bg-[radial-gradient(circle_at_1px_1px,#ffffff0f_6px,transparent_0)] bg-[size:48px_48px]" />
+      <div className="absolute  inset-0 bg-[radial-gradient(circle_at_1px_1px,#ffffff0f_6px,transparent_0)] bg-size-[48px_48px]" />
 
       <div className="relative z-10 flex flex-col items-center text-center px-6">
         {/* Cards */}
@@ -64,7 +64,7 @@ const Footer = () => {
     </section>
 
     {/* DOWN FOOTER */}
-      <section className="relative rounded-2xl min-h-screen w-full overflow-hidden bg-gradient-to-b from-black via-[#2b0a05] to-[#c61c0f] text-white">
+      <section className="relative rounded-2xl min-h-screen w-full overflow-hidden bg-linear-to-b from-black via-[#2b0a05] to-[#c61c0f] text-white">
       {/* Top content */}
       <div className="flex max-w-7xl justify-between px-10 pt-10 text-sm">
         {/* RIGHT */}
@@ -130,7 +130,7 @@ const Footer = () => {
           className="
             text-[20vw] font-extrabold leading-none tracking-tight
             text-transparent bg-clip-text
-            bg-gradient-to-b from-white to-[#c61c0f]
+            bg-linear-to-b from-white to-[#c61c0f]
             select-none
           "
         >

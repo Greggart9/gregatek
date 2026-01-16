@@ -17,7 +17,7 @@ const Navbar = () => {
         }}
         className="
           flex items-center justify-between
-          w-[910px] h-[61px]
+          w-227.5 h-15.25
           rounded-xl
           border-2 border-gray-700
           bg-black

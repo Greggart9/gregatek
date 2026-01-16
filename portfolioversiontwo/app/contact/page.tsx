@@ -123,7 +123,7 @@ const page = () => {
       {/* BOTTOM */}
 
     {/* DOWN FOOTER */}
-      <section className="relative rounded-2xl min-h-screen w-full overflow-hidden bg-gradient-to-b from-black via-[#2b0a05] to-[#c61c0f] text-white">
+      <section className="relative rounded-2xl min-h-screen w-full overflow-hidden bg-linear-to-b from-black via-[#2b0a05] to-[#c61c0f] text-white">
       {/* Top content */}
       <div className="flex max-w-7xl justify-between px-10 pt-10 text-sm">
         {/* RIGHT */}
@@ -189,7 +189,7 @@ const page = () => {
           className="
             text-[20vw] font-extrabold leading-none tracking-tight
             text-transparent bg-clip-text
-            bg-gradient-to-b from-white to-[#c61c0f]
+            bg-linear-to-b from-white to-[#c61c0f]
             select-none  "
         >
           Pumpkin

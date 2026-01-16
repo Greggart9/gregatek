@@ -58,7 +58,7 @@ export default function ServicesPage() {
             {/* RIGHT VISUAL */}
             <div className="flex w-86 items-center justify-center">
               {/* Replace with your real 3D asset */}
-              <div className="relative h-64 w-64 rounded-xl bg-gradient-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
+              <div className="relative h-64 w-64 rounded-xl bg-linear-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
             </div>
           </div>
 
@@ -99,7 +99,7 @@ export default function ServicesPage() {
             {/* RIGHT VISUAL */}
             <div className="flex w-86 items-center justify-center">
               {/* Replace with your real 3D asset */}
-              <div className="relative h-64 w-64 rounded-xl bg-gradient-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
+              <div className="relative h-64 w-64 rounded-xl bg-linear-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
             </div>
           </div>
 
@@ -138,7 +138,7 @@ export default function ServicesPage() {
             {/* RIGHT VISUAL */}
             <div className="flex w-86 items-center justify-center">
               {/* Replace with your real 3D asset */}
-              <div className="relative h-64 w-64 rounded-xl bg-gradient-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
+              <div className="relative h-64 w-64 rounded-xl bg-linear-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
             </div>
           </div>
 
@@ -179,7 +179,7 @@ export default function ServicesPage() {
             {/* RIGHT VISUAL */}
             <div className="flex w-86 items-center justify-center">
               {/* Replace with your real 3D asset */}
-              <div className="relative h-64 w-64 rounded-xl bg-gradient-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
+              <div className="relative h-64 w-64 rounded-xl bg-linear-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
             </div>
           </div>
 
@@ -219,7 +219,7 @@ export default function ServicesPage() {
             {/* RIGHT VISUAL */}
             <div className="flex w-86 items-center justify-center">
               {/* Replace with your real 3D asset */}
-              <div className="relative h-64 w-64 rounded-xl bg-gradient-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
+              <div className="relative h-64 w-64 rounded-xl bg-linear-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
             </div>
           </div>
 
@@ -231,7 +231,7 @@ export default function ServicesPage() {
         {/* CUSTOMERS NOTE */}
         <div className=" flex flex-col justify-center items-center w-full h-155.5 pt-25 pb-25 text-5xl">
             
-            <div className='flex flex-col bg-[url(/assets/asset69.png/)] bg-cover bg-center justify-between w-288 h-155.5 px-46 py-25 rounded-2xl'>
+            <div className='flex flex-col bg-[url(/assets/asset69.png/)] bg-cover bg-center justify-between w-6xl h-155.5 px-46 py-25 rounded-2xl'>
 
            {/* TOP SECTION */}
             <div className="">

@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 
 const page = () => {
   return (
-    <div className='flex flex-col min-h-screen m-6'>
+    <div className='flex flex-col min-h-screen m-3 md:m-6'>
       <Navbar />
       <Landingpage />
       <Landingabout />

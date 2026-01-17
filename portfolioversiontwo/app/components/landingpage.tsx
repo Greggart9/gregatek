@@ -37,12 +37,12 @@ const Landingabout = () => {
         className="relative z-10 flex flex-col h-full items-center justify-center"
       >
         <div className="flex justify-center flex-col items-center">
-        <h1 className="text-white text-[56px] text-center tracking-normal leading-16 font-medium max-w-2xl">
+        <h1 className="text-white text-[30px] md:text-[48px] xl:text-[56px] text-center tracking-normal leading-8 md:leading-13 xl:leading-16 font-medium max-w-2xl">
           Imagine a space between design & experience
         </h1>
         <p className="pt-4 font-medium leading-6 text-base">That’s where we make an impact.</p>
         
-        <div className="flex gap-3 pt-10">
+        <div className="flex gap-3 pt-6 md:pt-10">
           <Button
             href="/contact"
             label="Book a free call"
@@ -61,9 +61,9 @@ const Landingabout = () => {
 
         {/* BOTTOM CONTENT */}
   
-            <div className="absolute bottom-10 left-10 right-10 z-20 flex items-center justify-between text-white text-sm">
+            <div className="absolute bottom-10 left-10 right-10 z-20 flex items-center justify-center md:justify-between text-white text-sm">
             {/* LEFT */}
-            <span className=" tracking-wide">
+            <span className="hidden md:block tracking-wide">
                 <LiveClock />
             </span>
 
@@ -74,7 +74,7 @@ const Landingabout = () => {
             </div>
 
             {/* RIGHT */}
-            <span className="tracking-wide">
+            <span className="hidden md:block tracking-wide">
                 EST. in 2025
             </span>
             </div>

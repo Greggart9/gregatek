@@ -27,7 +27,7 @@ const Landingservices = () => {
 <div className="pt-9 pb-25">
   <div
     className="
-      grid gap-6
+      grid gap-4 md:gap-6
       grid-cols-1
       md:grid-cols-2
       xl:grid-cols-3
@@ -106,12 +106,12 @@ const Landingservices = () => {
   </div>                
         
                     {/* STACK DISPLAY */}
-                    <div className='flex px-6 mt-6 justify-between items-center w-full h-27 bg-gray-600/20 border border-white/10 rounded-2xl '>
-                    <p className='text-base w-[20%] leading-6 font-medium text-gray-400'>Everyday tools that we used for every projects</p>
+                    <div className='flex flex-col md:flex-row px-6 mt-4 md:mt-6 justify-between items-center w-full p-8 bg-gray-600/20 border border-white/10 rounded-2xl '>
+                    <p className='text-sm lg:text-base sm:w-[30%] md:w-[20%] leading-5 lg:leading-6 font-medium text-gray-400'>Everyday tools that we used for every projects</p>
                         <LogoMarquee
                             logos={logos}
                             speed={10}
-                            className="w-[77%]"
+                            className=" w-[85%] md:w-[77%]"
                             />
 
 

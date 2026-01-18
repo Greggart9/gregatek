@@ -54,7 +54,7 @@ export default function LogoMarquee({
         " />
 
       <motion.div
-        className="flex w-max items-center gap-14 px-6"
+        className="flex w-max items-center gap-6 md:gap-14 px-6"
         animate={controls}
       >
         {[...logos, ...logos].map((src, i) => (

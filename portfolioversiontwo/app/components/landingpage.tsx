@@ -42,7 +42,7 @@ const Landingabout = () => {
         </h1>
         <p className="pt-4 font-medium leading-6 text-base">That’s where we make an impact.</p>
         
-        <div className="flex gap-3 pt-6 md:pt-10">
+        <div className="flex flex-col sm:flex-row gap-3 pt-6 md:pt-10">
           <Button
             href="/contact"
             label="Book a free call"

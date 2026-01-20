@@ -16,42 +16,42 @@ const logos = [
 const Landingnumbers = () => {
   return (
     <>
-    <div className='flex flex-col h-fit pt-25 '>
+    <div className='flex flex-col h-fit pt-20 sm:pt-10 md:pt-25 '>
         {/* LETTER HEAD */}
         <div className='w-65'>
-            <p className='text-4xl font-semibold '>Numbers that speak volumes</p>
+            <p className='text-2xl md:text-4xl font-semibold '>Numbers that speak volumes</p>
         </div>
 
         {/* SERVICES */}
-        <div className='flex flex-col gap-6 pt-9 pb-25'>
+        <div className='flex flex-col gap-6 pt-9 pb-15 md:pb-25'>
         
                         {/* FIRST DISPLAY */}
                            
-                            <div className='h-32 flex gap-6'>
-                                <div className='relative h-full flex-1 justify-center flex bg-gray-600/20 border border-white/10 rounded-2xl overflow-hidden'>
+                            <div className='h-150 md:h-32 flex flex-col md:flex-row gap-4 md:gap-6'>
+                                <div className='relative h-full md:flex-1 justify-center flex bg-gray-600/20 border border-white/10 rounded-2xl overflow-hidden'>
                                     <div className='flex flex-col items-center justify-center gap-4'>
-                                    <p className='text-4xl font-semibold'>12+</p>
+                                    <p className='text-3xl lg:text-4xl font-medium lg:font-semibold'>12+</p>
                                     <p className='text-base leading-6 font-medium text-gray-400'>Years of expertise</p>
                                     </div>
                             </div>
                             
-                            <div className='relative h-full flex-1 justify-center flex bg-gray-600/20 border border-white/10 rounded-2xl overflow-hidden'>
+                            <div className='relative h-full md:flex-1 justify-center flex bg-gray-600/20 border border-white/10 rounded-2xl overflow-hidden'>
                                     <div className='flex flex-col items-center justify-center gap-4'>
-                                    <p className='text-4xl font-semibold'>200+</p>
+                                    <p className='text-3xl lg:text-4xl font-medium lg:font-semibold'>200+</p>
                                     <p className='text-base leading-6 font-medium text-gray-400'>Completed projects</p>
                                     </div>
                             </div>
 
-                            <div className='relative h-full flex-1 justify-center flex bg-gray-600/20 border border-white/10 rounded-2xl overflow-hidden'>
+                            <div className='relative h-full md:flex-1 justify-center flex bg-gray-600/20 border border-white/10 rounded-2xl overflow-hidden'>
                                     <div className='flex flex-col items-center justify-center gap-4'>
-                                    <p className='text-4xl font-semibold'>50M+</p>
+                                    <p className='text-3xl lg:text-4xl font-medium lg:font-semibold'>50M+</p>
                                     <p className='text-base leading-6 font-medium text-gray-400'>Revenue generated</p>
                                     </div>
                             </div>
 
-                            <div className='relative h-full flex-1 justify-center flex bg-gray-600/20 border border-white/10 rounded-2xl overflow-hidden'>
+                            <div className='relative h-full md:flex-1 justify-center flex bg-gray-600/20 border border-white/10 rounded-2xl overflow-hidden'>
                                     <div className='flex flex-col items-center justify-center gap-4'>
-                                    <p className='text-4xl font-semibold'>230+</p>
+                                    <p className='text-3xl lg:text-4xl font-medium lg:font-semibold'>230+</p>
                                     <p className='text-base leading-6 font-medium text-gray-400'>Satisfied clients</p>
                                     </div>
                             </div>
@@ -61,9 +61,9 @@ const Landingnumbers = () => {
         
                     {/* SECOND DISPLAY */}
                     
-                    <div className=' h-236 flex gap-6'>
+                    <div className='h-100 sm:h-136 md:190 lg:h-236 flex gap-6'>
                             <div className='relative h-full w-full flex justify-center text-center bg-gray-600/20 border border-white/10 rounded-2xl overflow-hidden'>
-                                        <div className='flex flex-col i pt-7 gap-3 absolute top-8 z-10'>
+                                        <div className='flex flex-col i md:pt-7 gap-3 absolute top-8 z-10'>
 
                                             <div className='flex justify-center items-center gap-2'>
                                                 <span
@@ -72,15 +72,15 @@ const Landingnumbers = () => {
                                                     shadow-[0_0_4px_rgba(34,197,94,0.9),0_0_14px_rgba(34,197,94,0.7)]"
                                                     ></span>
 
-                                              <p className='text-base leading-6 font-medium text-gray-400'>Available now</p>
+                                              <p className='text-base md:leading-6 font-medium text-gray-400'>Available now</p>
                                             </div>
                                         
-                                        <p className='text-3xl font-semibold'>Based in New York, USA</p>
+                                        <p className='text-xl md:text-3xl font-semibold'>Based in New York, USA</p>
                                         </div>
 
                                         {/* THE IMAGE */}
-                                    <div className='flex justify-center h-full pt-25'>
-                                        <img src="/assets/asset22.png" alt="" className='px-25 pt-16 pb-12.5' />
+                                    <div className='flex justify-center h-full pt-13 md:pt-25'>
+                                        <img src="/assets/asset22.png" alt="" className='px-2 sm:px-10 lg:px-25 pt-16 pb-12.5' />
                                     </div>
                                 </div>
         
@@ -88,12 +88,12 @@ const Landingnumbers = () => {
                     
         
                     {/* STACK DISPLAY */}
-                    <div className='flex px-6 justify-between items-center w-full h-24 bg-gray-600/20 border border-white/10 rounded-2xl '>
-                    <p className='text-base w-[20%] leading-6 font-medium text-gray-400'>30+ companies we are worked with</p>
+                    <div className='flex flex-col md:flex-row px-6 mt-0 md:mt-6 justify-between items-center w-full p-8 bg-gray-600/20 border border-white/10 rounded-2xl  '>
+                    <p className='text-sm lg:text-base sm:w-[30%] md:w-[20%] leading-5 lg:leading-6 font-medium text-gray-400'>30+ companies we are worked with</p>
                         <LogoMarquee
                             logos={logos}
                             speed={10}
-                            className="w-[77%]"
+                            className="w-[85%] md:w-[77%]"
                             />
 
 

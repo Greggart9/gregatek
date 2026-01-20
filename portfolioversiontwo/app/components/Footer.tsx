@@ -66,16 +66,17 @@ const Footer = () => {
     {/* DOWN FOOTER */}
       <section className="relative rounded-2xl min-h-screen w-full overflow-hidden bg-linear-to-b from-black via-[#2b0a05] to-[#c61c0f] text-white">
       {/* Top content */}
-      <div className="flex max-w-7xl justify-between px-10 pt-10 text-sm">
+
+      <div className="flex flex-col gap-15 md:flex-row w-full justify-between px-5 md:px-10 pt-10 text-sm">
         {/* RIGHT */}
 
-        <div className="text-4xl max-w-115 font-semibold leading-11">
+        <div className="text-2xl md:text-xl lg:text-4xl w-80 md:w-60 lg:w-115 font-semibold lg:leading-11">
           <p>30+ projects shipped for startups and global teams.</p>
 
         </div>
 
         {/* LEFT */}
-        <div className="flex font-semibold gap-10 ">
+        <div className="flex font-semibold gap-5 sm:gap-10 wrap ">
 
         {/* Contact */}
         <div className="space-y-3">
@@ -109,7 +110,7 @@ const Footer = () => {
             <li><RollTextLink label='Privacy policy' href="/privacy" className='text-sm' /></li>
           </ul>
 
-          <ul className="space-y-3">
+          <ul className="space-y-3 ">
             <li className='text-lg'>Links</li>
             <li><RollTextLink label='Linkedin' href="https://www.linkedin.com" className='text-sm' /></li>
             <li><RollTextLink label='X' href="https://www.x.com" className='text-sm' /></li>
@@ -127,8 +128,8 @@ const Footer = () => {
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="
-            text-[20vw] font-extrabold leading-none tracking-tight
+          className=" text-[15vw]
+          sm:text-[18vw] lg:text-[20vw] font-extrabold leading-none tracking-tight
             text-transparent bg-clip-text
             bg-linear-to-b from-white to-[#c61c0f]
             select-none

@@ -39,10 +39,10 @@ export default function FAQAccordion() {
   }
 
   return (
-    <section className="pt-25 pb-12.5 flex w-full gap-16">
+    <section className="pt-15 md:pt-25 pb-12.5 flex flex-col lg:flex-row w-full gap-8 lg:gap-16">
       {/* Left */}
-      <div className="flex-1">
-        <p className="text-4xl font-medium text-white">
+      <div className="w-60 md:w-85 flex-1">
+        <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-white">
           Everything you need to know
         </p>
       </div>

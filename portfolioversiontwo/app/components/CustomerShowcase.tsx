@@ -70,13 +70,13 @@ export default function CustomerShowcase() {
     <div className='flex flex-col '>
 
         {/* LETTER HEAD */}
-        <div className='w-85'>
-            <p className='text-4xl pb-10 font-semibold text-white'>What our clients say about us</p>
+        <div className='w-50 md:w-85'>
+            <p className='text-2xl md:text-4xl pb-10 font-semibold text-white'>What our clients say about us</p>
         </div>
 
 
 
-    <section className="relative h-screen w-full overflow-hidden rounded-3xl ">
+    <section className="relative h-140 md:h-screen w-full overflow-hidden rounded-3xl ">
 
 
       {/* Video Background */}
@@ -108,18 +108,18 @@ export default function CustomerShowcase() {
 
       {/* Quote */}
       <div className="relative z-10 flex h-full w-full items-center justify-center px-6 text-center">
-        <p className="max-w-3xl text-2xl font-medium leading-snug text-white md:text-3xl">
+        <p className="max-w-3xl text-2xl font-medium pb-30 md:pb-0 leading-snug text-white md:text-3xl">
           “{active.quote}”
         </p>
       </div>
 
       {/* Floating Customers */}
-      <div className="absolute bottom-22 left-1/2 z-20 flex -translate-x-1/2 gap-4">
+      <div className="absolute bottom-2 md:bottom-22 left-1/2 z-20 flex flex-col md:flex-row -translate-x-1/2 gap-4">
         {customers.map((customer) => (
           <button
             key={customer.id}
             onClick={() => setActive(customer)}
-            className={`flex items-center gap-3 rounded-2xl px-6 py-4 transition
+            className={`flex items-center gap-3 rounded-2xl w-50 lg:w-60 px-2 md:px-6 py-4 transition
             ${
               active.id === customer.id
                 ? 'bg-white/10 ring-1 ring-white/30'

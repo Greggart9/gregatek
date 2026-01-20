@@ -64,7 +64,7 @@ const Footer = () => {
     </section>
 
     {/* DOWN FOOTER */}
-      <section className="relative rounded-2xl min-h-screen w-full overflow-hidden bg-linear-to-b from-black via-[#2b0a05] to-[#c61c0f] text-white">
+      <section className="relative rounded-2xl h-160 sm:min-h-screen w-full overflow-hidden bg-linear-to-b from-black via-[#2b0a05] to-[#c61c0f] text-white">
       {/* Top content */}
 
       <div className="flex flex-col gap-15 md:flex-row w-full justify-between px-5 md:px-10 pt-10 text-sm">

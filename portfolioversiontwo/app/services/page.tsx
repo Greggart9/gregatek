@@ -1,90 +1,42 @@
-import Image from 'next/image'
 import Landingnumbers from '../components/landingnumbers'
 import Footer from '../components/Footer'
 
 export default function ServicesPage() {
   return (
-    <main className="h-fit m-6 bg-black text-white">
+    <main className="w-full overflow-x-hidden bg-black text-white px-6">
       {/* HEADER */}
-      <section className=" flex flex-col text-white justify-center items-center h-100 text-center">
-        <h1 className="text-5xl font-semibold tracking-tight">
-          Our Services
-        </h1>
+      <section className="flex flex-col text-white justify-center items-center h-70 md:h-80 text-center">
+        <h1 className="text-3xl md:text-5xl font-semibold tracking-tight">Our Services</h1>
 
-        <p className=" mt-6 w-120 ">
-          We create design solutions that blend strategy, creativity, and
-          clarity helping brands grow and products feel effortless.
+        <p className="mt-3 md:mt-6 w-75 md:w-120 ">
+          We create design solutions that blend strategy, creativity, and clarity helping brands grow and products feel effortless.
         </p>
       </section>
 
-      {/* SERVICE CARD */}
-      <section className="pb-25">
-        <div className=" flex flex-col items-center gap-10 justify-center">
-            {/* SERVICE ONE */}
-          <div className="relative h-102 w-227.5 flex justify-between items-center rounded-2xl bg-gray-600/20 border border-white/10 p-6 backdrop-blur ">
-            {/* LEFT */}
-            <div className='w-119'>
-              <h2 className="text-3xl font-semibold">Strategy</h2>
+      {/* SERVICES */}
+      <section className="pb-22 md:pb-32">
+        <div className="mx-auto flex max-w-5xl flex-col gap-8">
 
-              <p className="mt-4 max-w-md text-neutral-300">
-                We help brands make clear decisions by combining strong
-                design thinking with practical business strategy.
+          {/* SERVICE ONE */}
+          <div className="relative flex flex-col lg:flex-row gap-10 lg:py-20 rounded-2xl bg-gray-600/20 border border-white/10 p-8 backdrop-blur">
+            <div className="flex-1">
+              <h2 className="text-2xl lg:text-3xl font-semibold">Strategy</h2>
+
+              <p className="mt-4 max-w-xl text-neutral-300">
+                We help brands make clear decisions by combining strong design thinking with practical business strategy.
               </p>
 
-              <p className="mt-4 max-w-md text-neutral-300">
-                From user insights to product direction, our approach
-                consistently turns complexity into simple, confident action.
+              <p className="mt-4 max-w-xl text-neutral-300">
+                From user insights to product direction, our approach turns complexity into confident action.
               </p>
 
-              {/* TAGS */}
-              <div className="mt-15 flex flex-wrap gap-3">
+              <div className="mt-8 flex flex-wrap gap-3">
                 {[
                   'Product strategy',
                   'Brand positioning',
                   'User research',
                   'Market insights',
                   'Process & workflow',
-                ].map((item) => (
-                  <span
-                    key={item}
-                    className="rounded-lg border border-white/10 bg-black/40  px-4 py-2 text-sm text-neutral-300"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* RIGHT VISUAL */}
-            <div className="flex w-86 items-center justify-center">
-              {/* Replace with your real 3D asset */}
-              <div className="relative h-64 w-64 rounded-xl bg-linear-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
-            </div>
-          </div>
-
-          {/* SERVICE TWO */}
-          <div className="relative h-102 w-227.5 flex justify-between items-center rounded-2xl bg-gray-600/20 border border-white/10 p-6 backdrop-blur ">
-            {/* LEFT */}
-            <div className='w-119'>
-              <h2 className="text-3xl font-semibold">Design</h2>
-
-              <p className="mt-4 max-w-md text-neutral-300">
-                We craft clean interfaces, expressive identities, and digital experiences shaped by clarity.
-              </p>
-
-              <p className="mt-4 max-w-md text-neutral-300">
-                Great design is more than visuals — it’s how a product truly and seamlessly feels, moves, and brilliantly shows.
-              </p>
-
-              {/* TAGS */}
-              <div className="mt-15 flex flex-wrap gap-3">
-                {[
-                  'UI/UX design',
-                  'Branding & identity',
-                  'Visual direction',
-                  'Interaction design',
-                  'Design systems',
-                  'UI components',
                 ].map((item) => (
                   <span
                     key={item}
@@ -96,29 +48,62 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            {/* RIGHT VISUAL */}
-            <div className="flex w-86 items-center justify-center">
-              {/* Replace with your real 3D asset */}
-              <div className="relative h-64 w-64 rounded-xl bg-linear-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
+            <div className="flex flex-1 justify-center items-center">
+              <div className="h-56 w-56 rounded-xl bg-linear-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
             </div>
           </div>
 
-         {/* SERVICE THREE */}
-          <div className="relative h-102 w-227.5 flex justify-between items-center rounded-2xl bg-gray-600/20 border border-white/10 p-6 backdrop-blur ">
-            {/* LEFT */}
-            <div className='w-119'>
-              <h2 className="text-3xl font-semibold">Development</h2>
+          {/* SERVICE TWO */}
+          <div className="relative flex flex-col lg:flex-row gap-10 lg:py-20 rounded-2xl bg-gray-600/20 border border-white/10 p-8 backdrop-blur">
+            <div className="flex-1">
+              <h2 className="text-2xl lg:text-3xl font-semibold">Design</h2>
 
-              <p className="mt-4 max-w-md text-neutral-300">
-                Every layout, component, and interaction is built with precision for performance, scalability, and smooth user flow.
+              <p className="mt-4 max-w-xl text-neutral-300">
+                We craft clean interfaces, expressive identities, and digital experiences shaped by clarity.
               </p>
 
-              <p className="mt-4 max-w-md text-neutral-300">
-                We turn ideas into functional digital experiences through clean, modern front-end development.
+              <p className="mt-4 max-w-xl text-neutral-300">
+                Great design is how a product feels, moves, and communicates.
               </p>
 
-              {/* TAGS */}
-              <div className="mt-15 flex flex-wrap gap-3">
+              <div className="mt-8 flex flex-wrap gap-3">
+                {[
+                  'UI/UX design',
+                  'Branding & identity',
+                  'Visual direction',
+                  'Interaction design',
+                  'Design systems',
+                  'UI components'
+                ].map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-lg border border-white/10 bg-black/40 px-4 py-2 text-sm text-neutral-300"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="flex flex-1 justify-center items-center">
+              <div className="h-56 w-56 rounded-xl bg-linear-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
+            </div>
+          </div>
+
+          {/* SERVICE THREE */}
+          <div className="relative flex flex-col lg:flex-row lg:py-20 gap-10 rounded-2xl bg-gray-600/20 border border-white/10 p-8 backdrop-blur">
+            <div className="flex-1">
+              <h2 className="text-2xl lg:text-3xl font-semibold">Development</h2>
+
+              <p className="mt-4 max-w-xl text-neutral-300">
+                Every component is built with precision for performance and scalability.
+              </p>
+
+              <p className="mt-4 max-w-xl text-neutral-300">
+                We turn ideas into functional digital experiences.
+              </p>
+
+              <div className="mt-8 flex flex-wrap gap-3">
                 {[
                   'Full-stack development',
                   'Web engineering',
@@ -135,36 +120,32 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            {/* RIGHT VISUAL */}
-            <div className="flex w-86 items-center justify-center">
-              {/* Replace with your real 3D asset */}
-              <div className="relative h-64 w-64 rounded-xl bg-linear-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
+            <div className="flex flex-1 justify-center items-center">
+              <div className="h-56 w-56 rounded-xl bg-linear-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
             </div>
           </div>
 
           {/* SERVICE FOUR */}
-          <div className="relative h-102 w-227.5 flex justify-between items-center rounded-2xl bg-gray-600/20 border border-white/10 p-6 backdrop-blur ">
-            {/* LEFT */}
-            <div className='w-119'>
-              <h2 className="text-3xl font-semibold">AI-powered solution</h2>
+          <div className="relative flex flex-col lg:flex-row lg:py-20 gap-10 rounded-2xl bg-gray-600/20 border border-white/10 p-8 backdrop-blur">
+            <div className="flex-1">
+              <h2 className="text-2xl lg:text-3xl font-semibold">AI-powered solution</h2>
 
-              <p className="mt-4 max-w-md text-neutral-300">
-                We build AI-powered tools and workflows that help teams work smarter, stay organized, and unlock creativity together.
+              <p className="mt-4 max-w-xl text-neutral-300">
+                We build AI-powered tools and workflows that help teams work smarter.
               </p>
 
-              <p className="mt-4 max-w-md text-neutral-300">
-                From automation to smart design systems, all is seamlessly built to enhance efficiency.
+              <p className="mt-4 max-w-xl text-neutral-300">
+                From automation to intelligent systems.
               </p>
 
-              {/* TAGS */}
-              <div className="mt-15 flex flex-wrap gap-3">
+              <div className="mt-8 flex flex-wrap gap-3">
                 {[
                   'AI tools',
                   'Workflow automation',
-                  'Intelligent systems',
-                  'Data insights',
-                  'Predictive AI',
                   'Product innovation',
+                  'Data insights',
+                  'Intelligent systems',
+                  'Predictive AI',
                 ].map((item) => (
                   <span
                     key={item}
@@ -176,35 +157,31 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            {/* RIGHT VISUAL */}
-            <div className="flex w-86 items-center justify-center">
-              {/* Replace with your real 3D asset */}
-              <div className="relative h-64 w-64 rounded-xl bg-linear-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
+            <div className="flex flex-1 justify-center items-center">
+              <div className="h-56 w-56 rounded-xl bg-linear-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
             </div>
           </div>
 
           {/* SERVICE FIVE */}
-          <div className="relative h-102 w-227.5 flex justify-between items-center rounded-2xl bg-gray-600/20 border border-white/10 p-6 backdrop-blur ">
-            {/* LEFT */}
-            <div className='w-119'>
-              <h2 className="text-3xl font-semibold">Motion design</h2>
+          <div className="relative flex flex-col lg:flex-row lg:py-20 gap-10 rounded-2xl bg-gray-600/20 border border-white/10 p-8 backdrop-blur">
+            <div className="flex-1">
+              <h2 className="text-2xl lg:text-3xl font-semibold">Motion design</h2>
 
-              <p className="mt-4 max-w-md text-neutral-300">
-                We craft engaging animations and smooth interactions that make digital experiences intuitive and connected.
+              <p className="mt-4 max-w-xl text-neutral-300">
+                We craft engaging animations and smooth interactions.
               </p>
 
-              <p className="mt-4 max-w-md text-neutral-300">
-                Motion brings personality to digital products, making every interaction feel clearer, smoother, and more alive.
+              <p className="mt-4 max-w-xl text-neutral-300">
+                Motion brings personality to digital products.
               </p>
 
-              {/* TAGS */}
-              <div className="mt-15 flex flex-wrap gap-3">
+              <div className="mt-8 flex flex-wrap gap-3">
                 {[
-                  'Visual rhythm',
-                  'Animation rules',
-                  'UI/UX animation',
+                  'UI animation',
                   'Micro-interactions',
-                  '3D / cinematic motion',
+                  'Cinematic motion',
+                  'Animation rules',
+                  'Visual rhythm'
                 ].map((item) => (
                   <span
                     key={item}
@@ -216,52 +193,32 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            {/* RIGHT VISUAL */}
-            <div className="flex w-86 items-center justify-center">
-              {/* Replace with your real 3D asset */}
-              <div className="relative h-64 w-64 rounded-xl bg-linear-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
+            <div className="flex flex-1 justify-center items-center">
+              <div className="h-56 w-56 rounded-xl bg-linear-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
             </div>
           </div>
-
-
         </div>
       </section>
 
+      {/* CUSTOMER NOTE */}
+      <section className="">
+        <div
+          className="mx-auto max-w-7xl rounded-2xl bg-cover bg-center px-8 py-20 md:px-16 lg:px-24"
+          style={{ backgroundImage: "url('/assets/asset69.png')" }}
+        >
+          <div className="space-y-6 md:space-y-12 text-xl md:text-3xl lg:text-5xl font-medium leading-tight">
+            <p>
+              Digital experiences, crafted with creativity and purpose to move brands forward.
+            </p>
+            <p>
+              We design innovative digital solutions that help brands work smarter and create meaningful connections.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        {/* CUSTOMERS NOTE */}
-        <div className=" flex flex-col justify-center items-center w-full h-155.5 pt-25 pb-25 text-5xl">
-            
-            <div className='flex flex-col bg-[url(/assets/asset69.png/)] bg-cover bg-center justify-between w-6xl h-155.5 px-46 py-25 rounded-2xl'>
-
-           {/* TOP SECTION */}
-            <div className="">
-
-                {/* Content layer */}
-                <div className=" font-medium leading-13">
-                    <p>Digital experiences, crafted with creativity and purpose to move brands forward.</p>
-                </div>
-            </div>
-
-
-            {/* DOWN SECTION */}
-            <div className="mt-12">
-
-                {/* Content layer */}
-                <div className=" font-medium leading-13">
-                    <p>We design truly innovative digital solutions that help brands work even smarter and truly create more meaningful connections. </p>
-                </div>
-            </div>
-
-
-
-            </div>
-
-         </div>
-
-         {/* LANDING NUMBER */}
-         <Landingnumbers />
-          <Footer />
-
+      <Landingnumbers />
+      <Footer />
     </main>
   )
 }

@@ -14,12 +14,12 @@ const CategoryFilter = ({ categories, active, onChange }: Props) => {
           key={cat}
           onClick={() => onChange(cat)}
           className={`
-            px-4 py-1.5 rounded-full text-sm font-medium
+            px-4 py-1.5 rounded-lg text-sm font-medium
             transition
             ${
               active === cat
                 ? 'bg-white text-black'
-                : 'bg-white/10 text-white hover:bg-white/20'
+                : 'bg-white/9 text-white hover:bg-white/20'
             }
           `}
         >

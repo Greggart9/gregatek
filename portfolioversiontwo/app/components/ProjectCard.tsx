@@ -11,7 +11,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
         src={project.image}
         alt={project.title}
         className="
-          w-180 h-162.5 object-cover
+          w-180 h-90 md:h-137.5 lg:h-162.5 object-cover
           transition-transform duration-500
           group-hover:scale-105
         "

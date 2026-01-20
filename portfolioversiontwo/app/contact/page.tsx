@@ -7,14 +7,14 @@ import RollTextLink from '../components/textrolleffect'
 
 const page = () => {
   return (
-    <main className="h-fit m-6 pt-20 bg-black text-white">
+    <main className="h-fit m-6 pt-10 md:pt-20 bg-black text-white">
         {/* TOP */}
-      <section className="pb-24 h-150">
+      <section className="pb-24 h-290 md:h-150">
         <div className="">
-          <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-10 lg:gap-16 md:grid-cols-2">
             {/* LEFT */}
-            <div>
-              <h1 className="text-5xl font-semibold tracking-tight">
+            <div className=''>
+              <h1 className="text-3xl md:text-5xl font-semibold tracking-tight">
                 Let’s build together
               </h1>
 
@@ -49,7 +49,7 @@ const page = () => {
             {/* RIGHT */}
             <div className="rounded-2xl border border-white/10 bg-neutral-900/40 p-8 backdrop-blur">
               <form className="space-y-6">
-                <div className="grid gap-6 md:grid-cols-2">
+                <div className="grid gap-6 grid-cols-1 lg:grid-cols-2">
                   <div>
                     <label className="mb-2 block text-sm text-white">
                       Name
@@ -58,7 +58,7 @@ const page = () => {
                       type="text"
                       placeholder="Enter your name"
                       required
-                      className="w-full rounded-xl border border-white/10 bg-black px-4 py-3 text-sm outline-none focus:border-white/30"
+                      className="w-full rounded-xl border border-white/10 bg-black px-4 py-5 text-sm outline-none focus:border-white/30"
                     />
                   </div>
 
@@ -70,7 +70,7 @@ const page = () => {
                       type="email"
                       placeholder="Enter your email"
                       required
-                      className="w-full rounded-xl border border-white/10 bg-black px-4 py-3 text-sm outline-none focus:border-white/30"
+                      className="w-full rounded-xl border border-white/10 bg-black px-4 py-5 text-sm outline-none focus:border-white/30"
                     />
                   </div>
                 </div>
@@ -79,7 +79,7 @@ const page = () => {
                   <label className="mb-2 block text-sm text-white">
                     Service
                   </label>
-                  <select required className="w-full rounded-xl border border-white/10 bg-black px-4 py-3 text-sm outline-none focus:border-white/30">
+                  <select required className="w-full rounded-xl border border-white/10 bg-black px-4 py-5 text-sm outline-none focus:border-white/30">
                     <option>Select...</option>
                     <option>UI/UX Design</option>
                     <option>Web Development</option>
@@ -94,7 +94,7 @@ const page = () => {
                   <textarea
                     rows={5}
                     placeholder="Tell us about your product"
-                    className="w-full resize-none rounded-xl border border-white/10 bg-black px-4 py-3 text-sm outline-none focus:border-white/30"
+                    className="w-full resize-none rounded-xl border border-white/10 bg-black px-4 py-5 text-sm outline-none focus:border-white/30"
                   />
                 </div>
 
@@ -125,16 +125,16 @@ const page = () => {
     {/* DOWN FOOTER */}
       <section className="relative rounded-2xl min-h-screen w-full overflow-hidden bg-linear-to-b from-black via-[#2b0a05] to-[#c61c0f] text-white">
       {/* Top content */}
-      <div className="flex max-w-7xl justify-between px-10 pt-10 text-sm">
+      <div className="flex flex-col gap-15 md:flex-row w-full justify-between px-5 md:px-10 pt-10 text-sm">
         {/* RIGHT */}
 
-        <div className="text-4xl max-w-115 font-semibold leading-11">
+        <div className="ext-2xl md:text-xl lg:text-4xl w-80 md:w-60 lg:w-115 font-semibold lg:leading-11">
           <p>30+ projects shipped for startups and global teams.</p>
 
         </div>
 
         {/* LEFT */}
-        <div className="flex font-semibold gap-10">
+        <div className="flex font-semibold gap-5 sm:gap-10 wrap ">
 
         {/* Contact */}
         <div className="space-y-3">
@@ -187,7 +187,7 @@ const page = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="
-            text-[20vw] font-extrabold leading-none tracking-tight
+            text-[18vw] lg:text-[20vw] font-extrabold leading-none tracking-tight
             text-transparent bg-clip-text
             bg-linear-to-b from-white to-[#c61c0f]
             select-none  "

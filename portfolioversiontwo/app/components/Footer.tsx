@@ -128,8 +128,8 @@ const Footer = () => {
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className=" text-[15vw]
-          sm:text-[18vw] lg:text-[20vw] font-extrabold leading-none tracking-tight
+          className="
+          text-[18vw] lg:text-[20vw] font-extrabold leading-none tracking-tight
             text-transparent bg-clip-text
             bg-linear-to-b from-white to-[#c61c0f]
             select-none

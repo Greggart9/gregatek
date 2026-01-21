@@ -90,7 +90,7 @@ const Landingservices = () => {
       className="
         relative h-137.5 bg-gray-600/20 border border-white/10 rounded-2xl overflow-hidden
         md:col-span-2
-        xl:col-span-2
+        xl:col-span-1
       "
     >
       <div className="flex justify-center h-full pt-25">

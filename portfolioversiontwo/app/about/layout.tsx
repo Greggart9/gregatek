@@ -8,8 +8,6 @@ export default function AboutLayout({
 }) {
   return (
     <section>
-        <div className=' h-6'></div>
-      <Navbar />
       {children}
     </section>
   )

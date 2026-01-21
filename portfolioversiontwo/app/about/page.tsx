@@ -5,53 +5,56 @@ import Button from '@/app/components/Button'
 import LogoMarquee from '../components/LogoMarquee'
 import TeamCarousel from "../components/TeamCarousel";
 import Footer from "../components/Footer";
+import Landingnumbers from "../components/landingnumbers";
 
-const logos = [
-  "/assets/asset23.png",
-  "/assets/asset24.png",
-  "/assets/asset25.png",
-  "/assets/asset26.png",
-  "/assets/asset27.png",
-  "/assets/asset28.png",
-  "/assets/asset29.png",
-  "/assets/asset30.png",
-]
+import Navbar from '../components/navbar'
+import Landingabout from "../components/landingabout";
+
 
 const page = () => {
   return (
-    <div className="relative m-6 -z-1 h-[calc(100vh-48px)] -mt-20">
+    <div className="relative m-3 sm:m-6">
+      <div className="relative h-[calc(100vh-48px)] ">
+        {/* HERO BACKGROUND */}
+        <div className="relative w-full h-full rounded-2xl bg-[url('/assets/asset36.png')] bg-cover bg-center overflow-hidden">
 
-    {/* FIRST */}
-      <div className="w-full h-full rounded-2xl overflow-hidden bg-[url('/assets/asset36.png')] bg-cover bg-center">
+          {/* OVERLAY */}
+          <div className="absolute inset-0 bg-black/50" />
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50" />
+          {/* NAVBAR (INSIDE HERO, CENTERED) */}
+          <div className="relative z-20">
+            <div className="mx-auto max-w-7xl sm:px-6">
+              <Navbar />
+            </div>
+          </div>
 
-      {/* Content */}
-      <div className="relative z-10 flex items-center justify-center h-full text-center px-6">
-        <div className="max-w-2xl text-white">
-          <h1 className="text-4xl md:text-5xl font-semibold tracking-tight">
-            About us
-          </h1>
+          {/* HERO CONTENT */}
+          <div className="relative z-10 flex items-center justify-center h-full text-center px-6">
+            <div className="max-w-2xl text-white">
+              <h1 className="text-4xl md:text-5xl font-semibold tracking-tight">
+                About us
+              </h1>
 
-          <p className="mt-4 text-base md:text-lg text-white w-120">
-            Pumpkin is a digital design studio shaping bold, modern,
-            meaningful brands and products.
-          </p>
+              <p className="mt-4 text-base md:text-lg text-white pb-20">
+                Pumpkin is a digital design studio shaping bold, modern,
+                meaningful brands and products.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+
 
 
 
        {/* SECOND */}
-    <div className=" flex justify-center items-center w-full h-fit pt-31.5 pb-25 text-5xl">
+         <div className=" flex  justify-center items-center w-full h-fit pt-15.5 sm:pt-21.5 pb-10 md:pt-31.5 md:pb-25 text-2xl md:text-[40px] xl:text-5xl">
       <div className="">
 
       {/* Content layer */}
-      <div className=" font-medium w-186 leading-13">
+      <div className=" font-medium w-90 md:w-xl lg:w-2xl leading-7 md:leading-9 xl:leading-13">
         <p>Over the years, we’ve carefully and truly crafted digital experiences that help teams move faster and build deeper user connections.</p>
-        <p className="mt-12">
+        <p className="mt-4 md:mt-8 lg:mt-12">
           Every project, large or small, always gets the same careful level of intent and attention. 
         </p>
 
@@ -62,109 +65,26 @@ const page = () => {
 
 
     {/* THIRD */}
-    <div className='flex flex-col h-fit pt-10 '>
+    <div className='flex flex-col h-fit pt-5 sm:pt-10 '>
             {/* LETTER HEAD */}
             <div className='w-65'>
-                <p className='text-4xl font-semibold '>Meet the team</p>
+                <p className='text-2xl md:text-4xl font-semibold '>Meet the team</p>
             </div>
     
             {/* SERVICES */}
-            <div className='flex flex-col gap-6 pt-9 pb-25'>
+            <div className='flex flex-col gap-6 pt-9 pb-5 sm:pb-15 md:pb-25'>
               <TeamCarousel />
                         
             </div>
     </div>
 
     {/* FOURTH */}
+    <Landingnumbers />
+    
 
-    <div className='flex flex-col h-fit pt-15 '>
-            {/* LETTER HEAD */}
-            <div className='w-65'>
-                <p className='text-4xl font-semibold '>Numbers that speak volumes</p>
-            </div>
-    
-            {/* SERVICES */}
-            <div className='flex flex-col gap-6 pt-9 pb-25'>
-            
-                            {/* FIRST DISPLAY */}
-                               
-                                <div className='h-32 flex gap-6'>
-                                    <div className='relative h-full flex-1 justify-center flex bg-gray-600/20 border border-white/10 rounded-2xl overflow-hidden'>
-                                        <div className='flex flex-col items-center justify-center gap-4'>
-                                        <p className='text-4xl font-semibold'>12+</p>
-                                        <p className='text-base leading-6 font-medium text-gray-400'>Years of expertise</p>
-                                        </div>
-                                </div>
-                                
-                                <div className='relative h-full flex-1 justify-center flex bg-gray-600/20 border border-white/10 rounded-2xl overflow-hidden'>
-                                        <div className='flex flex-col items-center justify-center gap-4'>
-                                        <p className='text-4xl font-semibold'>200+</p>
-                                        <p className='text-base leading-6 font-medium text-gray-400'>Completed projects</p>
-                                        </div>
-                                </div>
-    
-                                <div className='relative h-full flex-1 justify-center flex bg-gray-600/20 border border-white/10 rounded-2xl overflow-hidden'>
-                                        <div className='flex flex-col items-center justify-center gap-4'>
-                                        <p className='text-4xl font-semibold'>50M+</p>
-                                        <p className='text-base leading-6 font-medium text-gray-400'>Revenue generated</p>
-                                        </div>
-                                </div>
-    
-                                <div className='relative h-full flex-1 justify-center flex bg-gray-600/20 border border-white/10 rounded-2xl overflow-hidden'>
-                                        <div className='flex flex-col items-center justify-center gap-4'>
-                                        <p className='text-4xl font-semibold'>230+</p>
-                                        <p className='text-base leading-6 font-medium text-gray-400'>Satisfied clients</p>
-                                        </div>
-                                </div>
-    
-                        </div>
-                                
-            
-                        {/* SECOND DISPLAY */}
-                        
-                        <div className=' h-236 flex gap-6'>
-                                <div className='relative h-full w-full flex justify-center text-center bg-gray-600/20 border border-white/10 rounded-2xl overflow-hidden'>
-                                            <div className='flex flex-col i pt-7 gap-3 absolute top-8 z-10'>
-    
-                                                <div className='flex justify-center items-center gap-2'>
-                                                    <span
-                                                        className="inline-block w-2.5 h-2.5 rounded-full bg-green-500
-                                                        animate-pulse
-                                                        shadow-[0_0_4px_rgba(34,197,94,0.9),0_0_14px_rgba(34,197,94,0.7)]"
-                                                        ></span>
-    
-                                                  <p className='text-base leading-6 font-medium text-gray-400'>Available now</p>
-                                                </div>
-                                            
-                                            <p className='text-3xl font-semibold'>Based in New York, USA</p>
-                                            </div>
-    
-                                            {/* THE IMAGE */}
-                                        <div className='flex justify-center h-full pt-25'>
-                                            <img src="/assets/asset22.png" alt="" className='px-25 pt-16 pb-12.5' />
-                                        </div>
-                                    </div>
-            
-                        </div>
-                        
-            
-                        {/* STACK DISPLAY */}
-                        <div className='flex px-6 justify-between items-center w-full h-24 bg-gray-600/20 border border-white/10 rounded-2xl '>
-                        <p className='text-base w-[20%] leading-6 font-medium text-gray-400'>30+ companies we are worked with</p>
-                            <LogoMarquee
-                                logos={logos}
-                                speed={10}
-                                className="w-[77%]"
-                                />
-                        </div>
-            </div>
+      {/* FOOTER */}
+      <Footer />
     </div>
-    
-
-    {/* FOOTER */}
-    <Footer />
-    </div>
-
   )
 }
 

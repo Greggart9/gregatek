@@ -6,24 +6,24 @@ import TeamCard from './TeamCard'
 
 const team = [
   {
-    name: 'Juno Hayes',
-    role: 'Motion Artist',
-    image: '/assets/asset1.png',
-  },
-  {
-    name: 'Leo Finch',
-    role: 'Story Architect',
-    image: '/assets/asset34.png',
+    name: 'Greg Finn',
+    role: 'Developer',
+    image: '/assets/team1.jpg',
   },
   {
     name: 'Skyler Jett',
+    role: 'Product Designer',
+    image: '/assets/team2.png',
+  },
+  {
+    name: 'Leo Hayes',
     role: 'Brand Visionary',
-    image: '/assets/asset7.png',
+    image: '/assets/team4.png',
   },
   {
     name: 'Nova Reyes',
     role: 'Team Lead',
-    image: '/assets/asset9.png',
+    image: '/assets/team3.jpg',
   },
 ]
 

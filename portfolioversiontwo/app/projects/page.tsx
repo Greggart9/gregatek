@@ -3,7 +3,7 @@ import Footer from '../components/Footer'
 
 const ProjectsPage = () => {
   return (
-    <div className="m-6  text-white">
+    <div className="m-3 sm:m-6 text-white">
       {/* HEADER */}
       <section className=" flex flex-col text-white justify-center items-center h-70 md:h-80 text-center">
         <h1 className="text-3xl md:text-5xl font-semibold tracking-tight">

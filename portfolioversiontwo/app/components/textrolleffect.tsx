@@ -5,10 +5,41 @@ import Link from 'next/link'
 type RollTextLinkProps = {
   href: string
   label: string
+  target?: '_blank'
   className?: string
 }
 
-const RollTextLink = ({ href, label, className }: RollTextLinkProps) => {
+const RollTextLink = ({ href, label, target, className }: RollTextLinkProps) => {
+  const isExternal = target === '_blank'
+
+  const Content = (
+    <>
+      {/* Default text */}
+      <motion.span
+        variants={{
+          rest: { y: 0 },
+          hover: { y: '-130%' },
+        }}
+        transition={{ duration: 0.25, ease: 'easeOut' }}
+        className="block"
+      >
+        {label}
+      </motion.span>
+
+      {/* Hover text */}
+      <motion.span
+        variants={{
+          rest: { y: '130%' },
+          hover: { y: '0%' },
+        }}
+        transition={{ duration: 0.25, ease: 'easeOut' }}
+        className="absolute inset-0 flex items-center justify-center"
+      >
+        {label}
+      </motion.span>
+    </>
+  )
+
   return (
     <motion.div
       initial="rest"
@@ -17,31 +48,20 @@ const RollTextLink = ({ href, label, className }: RollTextLinkProps) => {
       animate="rest"
       className="relative overflow-hidden inline-block"
     >
-      <Link href={href} className={`block relative ${className ?? ''}`}>
-        {/* Default text */}
-        <motion.span
-          variants={{
-            rest: { y: 0 },
-            hover: { y: '-130%' },
-          }}
-          transition={{ duration: 0.25, ease: 'easeOut' }}
-          className="block"
+      {isExternal ? (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`block relative ${className ?? ''}`}
         >
-          {label}
-        </motion.span>
-
-        {/* Hover text */}
-        <motion.span
-          variants={{
-            rest: { y: '130%' },
-            hover: { y: '0%' },
-          }}
-          transition={{ duration: 0.25, ease: 'easeOut' }}
-          className="absolute inset-0 flex items-center justify-center"
-        >
-          {label}
-        </motion.span>
-      </Link>
+          {Content}
+        </a>
+      ) : (
+        <Link href={href} className={`block relative ${className ?? ''}`}>
+          {Content}
+        </Link>
+      )}
     </motion.div>
   )
 }

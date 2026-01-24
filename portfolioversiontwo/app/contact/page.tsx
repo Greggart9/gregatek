@@ -151,8 +151,8 @@ const page = () => {
             href="mailto:hello@gregatek.agency"
            />
            <RollTextLink
-            label="+44 20 1234 5678"
-            href="tel:+442012345678"
+            label="+234 9079654499"
+            href="tel:+2349079654499"
            />
           </span>
 
@@ -169,11 +169,11 @@ const page = () => {
 
           <ul className="space-y-3">
             <li className='text-lg'>Links</li>
-            <li><RollTextLink label='Linkedin' href="https://www.linkedin.com" className='text-sm' /></li>
-            <li><RollTextLink label='X' href="https://www.x.com" className='text-sm' /></li>
-            <li><RollTextLink label='Instagram' href="https://www.instagram.com" className='text-sm' /></li>
-            <li><RollTextLink label='Upwork' href="https://www.upwork.com" className='text-sm' /></li>
-            <li><RollTextLink label='Contra' href="https://www.contra.com" className='text-sm' /></li>
+            <li><RollTextLink label='Linkedin' target="_blank" href="https://www.linkedin.com/in/oluwadamilare-ogundare-89aa75246/" className='text-sm'/></li>
+            <li><RollTextLink label='X' target="_blank" href="https://x.com/Oluwad_amilare" className='text-sm' /></li>
+            <li><RollTextLink label='Instagram' target="_blank" href="https://www.instagram.com/greggart9/?hl=en" className='text-sm' /></li>
+            <li><RollTextLink label='Upwork' target="_blank" href="https://www.upwork.com/freelancers/~01f4206c2db39023fa" className='text-sm' /></li>
+            <li><RollTextLink label='Contra' target="_blank" href="https://contra.com/oluwadamilare_ogundare_evytuaxa/work?r=oluwadamilare_ogundare_evytuaxa" className='text-sm' /></li>
           </ul>
         </div>
       </div>

@@ -66,7 +66,7 @@ const Footer = () => {
       <section className="relative rounded-2xl flex flex-col items-center h-160 sm:min-h-screen w-full overflow-hidden bg-linear-to-b from-black via-[#05152b] to-[#072ac8] text-white">
       {/* Top content */}
 
-      <div className="flex  justify-center  flex-col gap-15 md:flex-row w-full md:justify-between px-3 md:px-10 pt-10 text-sm">
+      <div className="flex justify-center flex-col gap-15 md:flex-row w-full md:justify-between px-3 md:px-10 pt-10 text-sm">
         {/* RIGHT */}
 
         <div className="text-2xl  md:text-xl lg:text-4xl w-80 md:w-60 lg:w-115 font-semibold lg:leading-11">
@@ -75,7 +75,7 @@ const Footer = () => {
         </div>
 
         {/* LEFT */}
-        <div className="flex w-full justify-between md:justify-center font-semibold gap-5 sm:gap-10 wrap ">
+        <div className="flex md:w-120 justify-between font-semibold gap-5 sm:gap-10 wrap ">
 
         {/* Contact */}
         <div className="space-y-3">
@@ -92,8 +92,8 @@ const Footer = () => {
             href="mailto:hello@gregatek.agency"
            />
            <RollTextLink
-            label="+44 20 1234 5678"
-            href="tel:+442012345678"
+            label="+234 9079654499"
+            href="tel:+2349079654499"
            />
           </span>
 
@@ -111,11 +111,11 @@ const Footer = () => {
 
           <ul className="space-y-3 ">
             <li className='text-lg'>Links</li>
-            <li><RollTextLink label='Linkedin' href="https://www.linkedin.com" className='text-sm' /></li>
-            <li><RollTextLink label='X' href="https://www.x.com" className='text-sm' /></li>
-            <li><RollTextLink label='Instagram' href="https://www.instagram.com" className='text-sm' /></li>
-            <li><RollTextLink label='Upwork' href="https://www.upwork.com" className='text-sm' /></li>
-            <li><RollTextLink label='Contra' href="https://www.contra.com" className='text-sm' /></li>
+            <li><RollTextLink label='Linkedin' target="_blank" href="https://www.linkedin.com/in/oluwadamilare-ogundare-89aa75246/" className='text-sm'/></li>
+            <li><RollTextLink label='X' target="_blank" href="https://x.com/Oluwad_amilare" className='text-sm' /></li>
+            <li><RollTextLink label='Instagram' target="_blank" href="https://www.instagram.com/greggart9/?hl=en" className='text-sm' /></li>
+            <li><RollTextLink label='Upwork' target="_blank" href="https://www.upwork.com/freelancers/~01f4206c2db39023fa" className='text-sm' /></li>
+            <li><RollTextLink label='Contra' target="_blank" href="https://contra.com/oluwadamilare_ogundare_evytuaxa/work?r=oluwadamilare_ogundare_evytuaxa" className='text-sm' /></li>
           </ul>
         </div>
       </div>

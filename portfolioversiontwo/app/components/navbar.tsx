@@ -32,7 +32,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <img className="h-7" src="/assets/gregaron.png" alt="Logo" />
-            <span className="font-inter font-semibold text-xl">Grgatek</span>
+            <span className="font-inter font-semibold text-xl">Gregatek</span>
           </Link>
 
           {/* Desktop Links */}

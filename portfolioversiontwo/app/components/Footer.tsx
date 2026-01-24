@@ -44,11 +44,10 @@ const Footer = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="max-w-3xl text-4xl md:text-5xl font-normal text-white leading-tight"
+          className=" md:max-w-xl lg:max-w-2xl text-4xl md:text-5xl font-normal text-white leading-tight"
         >
           From vision to launch we
-          <br />
-          <span className="text-white/80">design what matters.</span>
+          design what matters.
         </motion.h1>
 
         {/* CTA */}
@@ -64,19 +63,19 @@ const Footer = () => {
     </section>
 
     {/* DOWN FOOTER */}
-      <section className="relative rounded-2xl h-160 sm:min-h-screen w-full overflow-hidden bg-linear-to-b from-black via-[#05152b] to-[#072ac8] text-white">
+      <section className="relative rounded-2xl flex flex-col items-center h-160 sm:min-h-screen w-full overflow-hidden bg-linear-to-b from-black via-[#05152b] to-[#072ac8] text-white">
       {/* Top content */}
 
-      <div className="flex flex-col gap-15 md:flex-row w-full justify-between px-3 md:px-10 pt-10 text-sm">
+      <div className="flex  justify-center  flex-col gap-15 md:flex-row w-full md:justify-between px-3 md:px-10 pt-10 text-sm">
         {/* RIGHT */}
 
-        <div className="text-2xl md:text-xl lg:text-4xl w-80 md:w-60 lg:w-115 font-semibold lg:leading-11">
+        <div className="text-2xl  md:text-xl lg:text-4xl w-80 md:w-60 lg:w-115 font-semibold lg:leading-11">
           <p>30+ projects shipped for startups and global teams.</p>
 
         </div>
 
         {/* LEFT */}
-        <div className="flex font-semibold gap-5 sm:gap-10 wrap ">
+        <div className="flex w-full justify-between md:justify-center font-semibold gap-5 sm:gap-10 wrap ">
 
         {/* Contact */}
         <div className="space-y-3">
@@ -122,7 +121,7 @@ const Footer = () => {
       </div>
 
       {/* Big text */}
-      <div className="absolute px-4 sm-px-6 md:px-8 lg:px-10 bottom-16 left-0 w-full overflow-hidden">
+      <div className="absolute flex justify-center px-4 sm-px-6 md:px-8 lg:px-10 bottom-16 left-0 w-full overflow-hidden">
         <motion.h1
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}

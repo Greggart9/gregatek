@@ -16,7 +16,7 @@ const page = () => {
     <div className="relative m-3 sm:m-6">
       <div className="relative h-[calc(100vh-48px)] ">
         {/* HERO BACKGROUND */}
-        <div className="relative w-full h-full rounded-2xl bg-[url('/assets/asset36.png')] bg-cover bg-center overflow-hidden">
+        <div className="relative w-full h-full rounded-2xl bg-[url('/assets/asset71.png')] bg-cover bg-center overflow-hidden">
 
           {/* OVERLAY */}
           <div className="absolute inset-0 bg-black/50" />
@@ -36,7 +36,7 @@ const page = () => {
               </h1>
 
               <p className="mt-4 text-base md:text-lg text-white pb-20">
-                Pumpkin is a digital design studio shaping bold, modern,
+                Gregatek is a digital design studio shaping bold, modern,
                 meaningful brands and products.
               </p>
             </div>

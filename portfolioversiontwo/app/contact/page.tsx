@@ -41,7 +41,7 @@ const page = () => {
               <div className="mt-16">
                 <p className="text-sm text-neutral-500">Direct Inquiry</p>
                 <p className="mt-2 text-xl font-medium">
-                  pumpkin@support.com
+                  gregatek@support.com
                 </p>
               </div>
             </div>
@@ -123,9 +123,9 @@ const page = () => {
       {/* BOTTOM */}
 
     {/* DOWN FOOTER */}
-      <section className="relative rounded-2xl h-160 sm:min-h-screen w-full overflow-hidden bg-linear-to-b from-black via-[#2b0a05] to-[#c61c0f] text-white">
+      <section className="relative rounded-2xl h-160 sm:min-h-screen w-full overflow-hidden bg-linear-to-b from-black via-[#05152b] to-[#072ac8] text-white">
       {/* Top content */}
-      <div className="flex flex-col gap-15 md:flex-row w-full justify-between px-5 md:px-10 pt-10 text-sm">
+      <div className="flex flex-col gap-15 md:flex-row w-full justify-between px-3 md:px-10 pt-10 text-sm">
         {/* RIGHT */}
 
         <div className="ext-2xl md:text-xl lg:text-4xl w-80 md:w-60 lg:w-115 font-semibold lg:leading-11">
@@ -141,14 +141,14 @@ const page = () => {
           <p className='text-lg '>Contact</p>
 
           <span className="space-y-1">
-          <p>Pumkin Agency</p>
+          <p>Gregatek Agency</p>
           <p>New York, USA</p>
           </span>
 
           <span className="space-y-1 pt-4 flex flex-col">
            <RollTextLink
-            label="hello@pumkin.agency"
-            href="mailto:hello@pumkin.agency"
+            label="hello@gregatek.agency"
+            href="mailto:hello@gregatek.agency"
            />
            <RollTextLink
             label="+44 20 1234 5678"
@@ -161,11 +161,10 @@ const page = () => {
           <ul className="space-y-3">
             <li className='text-lg'>Pages</li>
             <li><RollTextLink label='Home' href="/" className='text-sm' /></li>
+            <li><RollTextLink label='Projects' href="/projects" className='text-sm' /></li>
             <li><RollTextLink label='Services' href="/services" className='text-sm' /></li>
             <li><RollTextLink label='About us' href="/about" className='text-sm' /></li>
             <li><RollTextLink label='Contact' href="/contact" className='text-sm' /></li>
-            <li><RollTextLink label='Terms' href="/terms" className='text-sm' /></li>
-            <li><RollTextLink label='Privacy policy' href="/privacy" className='text-sm' /></li>
           </ul>
 
           <ul className="space-y-3">
@@ -175,30 +174,29 @@ const page = () => {
             <li><RollTextLink label='Instagram' href="https://www.instagram.com" className='text-sm' /></li>
             <li><RollTextLink label='Upwork' href="https://www.upwork.com" className='text-sm' /></li>
             <li><RollTextLink label='Contra' href="https://www.contra.com" className='text-sm' /></li>
-            <li><RollTextLink label='Behance' href="https://www.behance.net" className='text-sm' /></li>
           </ul>
         </div>
       </div>
 
       {/* Big text */}
-      <div className="absolute px-10 bottom-16 left-0 w-full overflow-hidden">
+      <div className="absolute px-4 sm-px-6 md:px-8 lg:px-10 bottom-16 left-0 w-full overflow-hidden">
         <motion.h1
           initial={{ opacity: 0, y: 60 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="
-            text-[18vw] lg:text-[20vw] font-extrabold leading-none tracking-tight
+            text-[16vw] lg:text-[18vw] font-extrabold leading-none tracking-tight
             text-transparent bg-clip-text
-            bg-linear-to-b from-white to-[#c61c0f]
+            bg-linear-to-b from-white to-[#072ac8]
             select-none  "
         >
-          Pumpkin
+          Gregatek
         </motion.h1>
       </div>
 
       {/* Footer */}
       <div className="absolute bottom-4 w-full text-center text-base opacity-80">
-        All rights reserved © 2026 Pumpkin agency
+        All rights reserved © 2026 Gregatek agency
       </div>
 
       </section>

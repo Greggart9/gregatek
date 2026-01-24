@@ -18,6 +18,7 @@ const TransparentButton = ({
     px-4 py-2
     rounded-lg
     text-xs
+    backdrop-blur-xs
    sm:text-sm font-semibold
     bg-black/20 text-white
 

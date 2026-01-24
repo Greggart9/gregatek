@@ -11,23 +11,24 @@ export const categories = [
   'Branding',
   'Development',
   'Motion design',
-  '3D design',
+  'Web design',
   'Mobile app design',
+  '3D design',
   'AI-powered solution',
 ]
 
 export const projects: Project[] = [
   {
-    id: 'zupitar',
-    title: 'Zupitar',
+    id: 'solitone',
+    title: 'Solitone',
     image: '/assets/asset6.png',
     categories: ['Branding', 'Motion design'],
   },
   {
-    id: 'nexora',
-    title: 'Nexora',
+    id: 'creer',
+    title: 'Creer',
     image: '/assets/asset7.png',
-    categories: ['Development', '3D design'],
+    categories: ['Development', 'Web design'],
   },
     {
     id: 'nirvana',
@@ -44,13 +45,13 @@ export const projects: Project[] = [
     {
     id: 'aurora',
     title: 'Aurora',
-    image: '/assets/asset10.png',
+    image: '/assets/asset10.jpg',
     categories: ['SaaS', 'AI-powered solution'],
   },
   {
     id: 'staurn',
     title: 'Staurn',
-    image: '/assets/asset11.png',
+    image: '/assets/asset11.jpg',
     categories: ['Motion design', 'Development'],
   },
   // add more…

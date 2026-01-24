@@ -23,7 +23,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
       {/* text */}
       <div className="absolute bottom-8 left-6 z-10 text-white">
         <h3 className="text-3xl px-4 font-semibold">{project.title}</h3>
-        <p className=" flex gap-3 px-4 py-2 rounded-lg text-sm
+        <p className=" flex gap-3 px-4 py-2 rounded-lg backdrop-blur-xs text-sm
        text-white">
           {project.categories.join(' · ')}
         </p>

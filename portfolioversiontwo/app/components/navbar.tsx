@@ -31,8 +31,8 @@ const Navbar = () => {
         >
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <img className="h-7" src="/assets/asset 0.png" alt="Logo" />
-            <span className="font-inter font-semibold text-xl">Pumpkin</span>
+            <img className="h-7" src="/assets/gregaron.png" alt="Logo" />
+            <span className="font-inter font-semibold text-xl">Gregatek</span>
           </Link>
 
           {/* Desktop Links */}
@@ -40,6 +40,7 @@ const Navbar = () => {
             <li><RollTextLink href="/projects" label="Projects" /></li>
             <li><RollTextLink href="/services" label="Services" /></li>
             <li><RollTextLink href="/about" label="About us" /></li>
+            <li><RollTextLink href="/" label="Blog" /></li>
           </ul>
 
           {/* Desktop CTA */}
@@ -92,8 +93,8 @@ const Navbar = () => {
             {/* Header */}
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <img className="h-7" src="/assets/asset 0.png" alt="Logo" />
-                <span className="font-semibold text-lg">Pumpkin</span>
+                <img className="h-7" src="/assets/gregaron.png" alt="Logo" />
+                <span className="font-semibold text-lg">Gregatek</span>
               </div>
 
               <button onClick={() => setOpen(false)}>

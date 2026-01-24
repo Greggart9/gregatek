@@ -28,23 +28,23 @@ const Featuredproject = () => {
                    <HoverCursor label="View Details">
                     <div className=' h-190 md:h-137.5 flex flex-col md:flex-row gap-4 md:gap-6'>
                         <div className='relative h-full flex-1 lg:flex-2 rounded-2xl overflow-hidden'>
-                            <div className='absolute inset-0 bg-[url("/assets/asset6.png")] bg-cover bg-center hover:scale-110 transition-all duration-300 ease-in-out'></div>
+                            <div className='absolute inset-0 bg-[url("/assets/asset6.png")] bg-cover bg-top hover:scale-110 transition-all duration-300 ease-in-out'></div>
                             <div className='flex flex-col pl-7 gap-3 absolute bottom-8 z-10'>
-                            <p className='text-3xl font-semibold'>Zupitar</p>
+                            <p className='text-3xl font-semibold'>Solitone</p>
                             <div className='flex gap-3'>
-                                <TransparentButton href="/projects/zupiter" label="Branding" />
-                                <TransparentButton href="/projects/zupiter" label="Motion design" />
+                                <TransparentButton href="/projects/solitone" label="Branding" />
+                                <TransparentButton href="/projects/solitone" label="Motion design" />
                             </div>
                             </div>
                         </div>
                     
                     <div className='relative h-full flex-1 rounded-2xl overflow-hidden'>
-                            <div className='absolute inset-0 bg-[url("/assets/asset7.png")] bg-cover bg-center hover:scale-110 transition-all duration-300 ease-in-out'></div>
+                            <div className='absolute inset-0 bg-[url("/assets/asset7.png")] bg-cover bg-start hover:scale-110 transition-all duration-300 ease-in-out'></div>
                             <div className='flex flex-col pl-7 gap-3 absolute bottom-8 z-10'>
-                            <p className='text-3xl font-semibold'>Nexora</p>
+                            <p className='text-3xl font-semibold'>Creer</p>
                             <div className='flex gap-3'>
-                                <TransparentButton href="/projects/nexora" label="Development" />
-                                <TransparentButton href="/projects/nexora" label="3D design" />
+                                <TransparentButton href="/projects/creer" label="Development" />
+                                <TransparentButton href="/projects/creer" label="Web design" />
                             </div>
                             </div>
                         </div>
@@ -85,7 +85,7 @@ const Featuredproject = () => {
                         </div>
                     
                     <div className='relative h-full flex-1 rounded-2xl overflow-hidden'>
-                            <div className='absolute inset-0 bg-[url("/assets/asset10.png")] bg-cover bg-center hover:scale-110 transition-all duration-300 ease-in-out'></div>
+                            <div className='absolute inset-0 bg-[url("/assets/asset10.jpg")] bg-cover bg-center hover:scale-110 transition-all duration-300 ease-in-out'></div>
                             <div className='flex flex-col pl-7 gap-3 absolute bottom-8 z-10'>
                             <p className='text-3xl font-semibold'>Aurora</p>
                             <div className='flex gap-3'>
@@ -97,7 +97,7 @@ const Featuredproject = () => {
 
 
                     <div className='relative h-full flex-1 rounded-2xl overflow-hidden'>
-                            <div className='absolute inset-0 bg-[url("/assets/asset11.png")] bg-cover bg-center hover:scale-110 transition-all duration-300 ease-in-out'></div>
+                            <div className='absolute inset-0 bg-[url("/assets/asset11.jpg")] bg-cover bg-center hover:scale-110 transition-all duration-300 ease-in-out'></div>
                             <div className='flex flex-col pl-7 gap-3 absolute bottom-8 z-10'>
                             <p className='text-3xl font-semibold'>Staurn</p>
                             <div className='flex flex-col sm:flex-row gap-3'>

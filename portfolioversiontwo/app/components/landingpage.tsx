@@ -21,9 +21,11 @@ const Landingabout = () => {
           duration: 1.2,
           ease: [0, 0, 0.2, 1],
         }}
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/assets/asset1.png')" }}
+        className="absolute inset-0 bg-cover bg-no-repeat bg-center"
+        style={{ backgroundImage: "url('/assets/land.jpg')" }}
       />
+      {/* OVERLAY */}
+      <div className="absolute inset-0 bg-black/40" />
 
       {/* CONTENT (fade + scale AFTER bg) */}
       <motion.div
@@ -38,7 +40,7 @@ const Landingabout = () => {
       >
         <div className="flex justify-center flex-col items-center">
         <h1 className="text-white text-[30px] md:text-[48px] xl:text-[56px] text-center tracking-normal leading-8 md:leading-13 xl:leading-16 font-medium max-w-2xl">
-          Imagine a space between design & experience
+          Imagine a space between vision & impact
         </h1>
         <p className="pt-4 font-medium leading-6 text-base">That’s where we make an impact.</p>
         

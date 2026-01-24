@@ -18,7 +18,7 @@ export default function ServicesPage() {
         <div className="mx-auto flex max-w-5xl flex-col gap-8">
 
           {/* SERVICE ONE */}
-          <div className="relative flex flex-col lg:flex-row gap-10 lg:py-20 rounded-2xl bg-gray-600/20 border border-white/10 p-8 backdrop-blur">
+          <div className="relative flex flex-col lg:flex-row gap-10 lg:py-20 rounded-2xl bg-gray-400/10 border border-white/10 p-8 backdrop-blur">
             <div className="flex-1">
               <h2 className="text-2xl lg:text-3xl font-semibold">Strategy</h2>
 
@@ -49,12 +49,12 @@ export default function ServicesPage() {
             </div>
 
             <div className="flex flex-1 justify-center items-center">
-              <div className="h-56 w-56 rounded-xl bg-linear-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
+              <video src="/videos/vid1.mp4" className="h-56 w-56 object-contain" autoPlay muted loop playsInline />
             </div>
           </div>
 
           {/* SERVICE TWO */}
-          <div className="relative flex flex-col lg:flex-row gap-10 lg:py-20 rounded-2xl bg-gray-600/20 border border-white/10 p-8 backdrop-blur">
+          <div className="relative flex flex-col lg:flex-row gap-10 lg:py-20 rounded-2xl bg-gray-400/10 border border-white/10 p-8 backdrop-blur">
             <div className="flex-1">
               <h2 className="text-2xl lg:text-3xl font-semibold">Design</h2>
 
@@ -63,7 +63,7 @@ export default function ServicesPage() {
               </p>
 
               <p className="mt-4 max-w-xl text-neutral-300">
-                Great design is how a product feels, moves, and communicates.
+                Great design is more than visuals — it’s how a product truly and seamlessly feels, moves, and brilliantly shows.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
@@ -86,21 +86,21 @@ export default function ServicesPage() {
             </div>
 
             <div className="flex flex-1 justify-center items-center">
-              <div className="h-56 w-56 rounded-xl bg-linear-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
+              <video src="/videos/vid2.mp4" className="h-56 w-56 object-contain" autoPlay muted loop playsInline />
             </div>
           </div>
 
           {/* SERVICE THREE */}
-          <div className="relative flex flex-col lg:flex-row lg:py-20 gap-10 rounded-2xl bg-gray-600/20 border border-white/10 p-8 backdrop-blur">
+          <div className="relative flex flex-col lg:flex-row lg:py-20 gap-10 rounded-2xl bg-gray-400/10 border border-white/10 p-8 backdrop-blur">
             <div className="flex-1">
               <h2 className="text-2xl lg:text-3xl font-semibold">Development</h2>
 
               <p className="mt-4 max-w-xl text-neutral-300">
-                Every component is built with precision for performance and scalability.
+                Every layout, component, and interaction is built with precision for performance, scalability, and smooth user flow.
               </p>
 
               <p className="mt-4 max-w-xl text-neutral-300">
-                We turn ideas into functional digital experiences.
+                We turn ideas into functional digital experiences through clean, modern front-end development.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
@@ -121,21 +121,21 @@ export default function ServicesPage() {
             </div>
 
             <div className="flex flex-1 justify-center items-center">
-              <div className="h-56 w-56 rounded-xl bg-linear-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
+              <video src="/videos/vid3.mp4" className="h-56 w-56 object-contain" autoPlay muted loop playsInline />
             </div>
           </div>
 
           {/* SERVICE FOUR */}
-          <div className="relative flex flex-col lg:flex-row lg:py-20 gap-10 rounded-2xl bg-gray-600/20 border border-white/10 p-8 backdrop-blur">
+          <div className="relative flex flex-col lg:flex-row lg:py-20 gap-10 rounded-2xl bg-gray-400/10 border border-white/10 p-8 backdrop-blur">
             <div className="flex-1">
               <h2 className="text-2xl lg:text-3xl font-semibold">AI-powered solution</h2>
 
               <p className="mt-4 max-w-xl text-neutral-300">
-                We build AI-powered tools and workflows that help teams work smarter.
+                We build AI-powered tools and workflows that help teams work smarter, stay organized, and unlock creativity together.
               </p>
 
               <p className="mt-4 max-w-xl text-neutral-300">
-                From automation to intelligent systems.
+                From automation to smart design systems, all is seamlessly built to enhance efficiency.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
@@ -158,21 +158,21 @@ export default function ServicesPage() {
             </div>
 
             <div className="flex flex-1 justify-center items-center">
-              <div className="h-56 w-56 rounded-xl bg-linear-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
+              <video src="/videos/vid4.mp4" className="h-56 w-56 object-contain" autoPlay muted loop playsInline />
             </div>
           </div>
 
           {/* SERVICE FIVE */}
-          <div className="relative flex flex-col lg:flex-row lg:py-20 gap-10 rounded-2xl bg-gray-600/20 border border-white/10 p-8 backdrop-blur">
+          <div className="relative flex flex-col lg:flex-row lg:py-20 gap-10 rounded-2xl bg-gray-400/10 border border-white/10 p-8 backdrop-blur">
             <div className="flex-1">
               <h2 className="text-2xl lg:text-3xl font-semibold">Motion design</h2>
 
               <p className="mt-4 max-w-xl text-neutral-300">
-                We craft engaging animations and smooth interactions.
+                We craft engaging animations and smooth interactions that make digital experiences intuitive and connected.
               </p>
 
               <p className="mt-4 max-w-xl text-neutral-300">
-                Motion brings personality to digital products.
+                Motion brings personality to digital products, making every interaction feel clearer, smoother, and more alive.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
@@ -194,7 +194,7 @@ export default function ServicesPage() {
             </div>
 
             <div className="flex flex-1 justify-center items-center">
-              <div className="h-56 w-56 rounded-xl bg-linear-to-br from-neutral-700/40 to-neutral-900/60 shadow-2xl" />
+              <video src="/videos/vid5.mp4" className="h-56 w-56 object-contain" autoPlay muted loop playsInline />
             </div>
           </div>
         </div>
@@ -204,7 +204,7 @@ export default function ServicesPage() {
       <section className="">
         <div
           className="mx-auto max-w-7xl rounded-2xl bg-cover bg-center px-8 py-20 md:px-16 lg:px-24"
-          style={{ backgroundImage: "url('/assets/asset69.png')" }}
+          style={{ backgroundImage: "url('/assets/basset69.png')" }}
         >
           <div className="space-y-6 md:space-y-12 text-xl md:text-3xl lg:text-5xl font-medium leading-tight">
             <p>

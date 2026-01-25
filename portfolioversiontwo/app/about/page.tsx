@@ -6,9 +6,9 @@ import LogoMarquee from '../components/LogoMarquee'
 import TeamCarousel from "../components/TeamCarousel";
 import Footer from "../components/Footer";
 import Landingnumbers from "../components/landingnumbers";
-
 import Navbar from '../components/navbar'
-import Landingabout from "../components/landingabout";
+import TextReveal from "../components/TextReveal";
+
 
 
 const page = () => {
@@ -29,39 +29,49 @@ const page = () => {
           </div>
 
           {/* HERO CONTENT */}
-          <div className="relative z-10 flex items-center justify-center h-full text-center px-6 -mt-15">
-            <div className="max-w-2xl text-white">
-              <h1 className="text-4xl md:text-5xl font-semibold tracking-tight">
-                About us
-              </h1>
 
-              <p className="mt-4 text-base md:text-lg w-80 md:w-120 text-white pb-20">
+          <motion.div
+          initial={{ opacity: 0, scale: 0.7 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="relative z-10 flex items-center justify-center h-full text-center px-6 -mt-15"
+        >
+          <div className="">
+            <div className="flex flex-col max-w-2xl text-white">
+              <span className="text-4xl md:text-5xl font-semibold tracking-tight">
+                About us
+              </span>
+              <span className=" text-base md:text-lg mt-5 text-white pb-20">
                 Gregatek is a digital design studio shaping bold, modern,
                 meaningful brands and products.
-              </p>
+              </span>
             </div>
           </div>
+          </motion.div>
+
+
+
         </div>
       </div>
 
 
 
-
        {/* SECOND */}
-         <div className=" flex  justify-center items-center w-full h-fit pt-15.5 sm:pt-21.5 pb-10 md:pt-31.5 md:pb-25 text-2xl md:text-[40px] xl:text-5xl">
+       <TextReveal>
+      <div className=" flex  justify-center items-center w-full h-fit pt-15.5 sm:pt-21.5 pb-10 md:pt-31.5 md:pb-25 text-2xl md:text-[40px] xl:text-5xl">
       <div className="">
-
+      
       {/* Content layer */}
-      <div className=" font-medium w-90 md:w-xl lg:w-2xl leading-7 md:leading-9 xl:leading-13">
-        <p>Over the years, we’ve carefully and truly crafted digital experiences that help teams move faster and build deeper user connections.</p>
+      <div className=" font-medium w-90 md:w-xl lg:w-2xl leading-7 md:leading-9 xl:leading-13 fade-text">
+        <p className="">Over the years, we’ve carefully and truly crafted digital experiences that help teams move faster and build deeper user connections.</p>
         <p className="mt-4 md:mt-8 lg:mt-12">
           Every project, large or small, always gets the same careful level of intent and attention. 
         </p>
 
       </div>
       </div>
-
     </div>
+    </TextReveal>
 
 
     {/* THIRD */}

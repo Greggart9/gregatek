@@ -1,17 +1,30 @@
+"use client"
+
 import Landingnumbers from '../components/landingnumbers'
 import Footer from '../components/Footer'
+import { motion } from 'framer-motion'
+import TextReveal from '../components/TextReveal'
 
 export default function ServicesPage() {
   return (
     <main className="w-full overflow-x-hidden bg-black text-white px-6">
       {/* HEADER */}
-      <section className="flex flex-col text-white justify-center items-center h-70 md:h-80 text-center">
+
+      <section className="">
+          <motion.div
+          initial={{ opacity: 0, scale: 0.7 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="w-full flex flex-col text-white justify-center items-center h-70 md:h-80 text-center"
+        >
         <h1 className="text-3xl md:text-5xl font-semibold tracking-tight">Our Services</h1>
 
         <p className="mt-3 md:mt-6 w-75 md:w-120 ">
           We create design solutions that blend strategy, creativity, and clarity helping brands grow and products feel effortless.
         </p>
+        </motion.div>
       </section>
+
 
       {/* SERVICES */}
       <section className="pb-22 md:pb-32">
@@ -202,6 +215,7 @@ export default function ServicesPage() {
 
       {/* CUSTOMER NOTE */}
       <section className="">
+        <TextReveal>
         <div
           className="mx-auto max-w-7xl rounded-2xl bg-cover bg-center px-8 py-20 md:px-16 lg:px-24"
           style={{ backgroundImage: "url('/assets/basset69.png')" }}
@@ -215,6 +229,7 @@ export default function ServicesPage() {
             </p>
           </div>
         </div>
+        </TextReveal>
       </section>
 
       <Landingnumbers />

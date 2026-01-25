@@ -1,5 +1,6 @@
 import React from 'react'
 import LogoMarquee from './LogoMarquee'
+import TextReveal from './TextReveal'
 
 const logos = [
   "/assets/asset12.png",
@@ -16,6 +17,7 @@ const logos = [
 const Landingservices = () => {
   return (
     <>
+    
     <div className='flex flex-col h-fit sm:pt-12.5 '>
         
         {/* LETTER HEAD */}
@@ -23,7 +25,8 @@ const Landingservices = () => {
             <p className='text-2xl md:text-4xl font-semibold '>Our Services</p>
         </div>
 
-       {/* SERVICES */}
+  {/* SERVICES */}
+  
 <div className="pt-9 pb-25">
   <div
     className="
@@ -126,7 +129,9 @@ const Landingservices = () => {
           className="mx-auto max-w-7xl rounded-2xl bg-cover bg-center px-8 py-20 md:px-16 lg:px-24"
           style={{ backgroundImage: "url('/assets/basset69.png')" }}
         >
+          <TextReveal>
           <div className="space-y-6 md:space-y-12 text-xl md:text-3xl lg:text-5xl font-medium leading-tight">
+            
             <p>
               We prioritize exceptional customer service, meeting every client’s needs across development & design — with a great experience.
             </p>
@@ -134,6 +139,7 @@ const Landingservices = () => {
               We design innovative digital solutions that help brands work smarter and create meaningful connections.
             </p>
           </div>
+          </TextReveal>
         </div>
       </section>
     </div>

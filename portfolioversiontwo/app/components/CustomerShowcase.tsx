@@ -107,6 +107,7 @@ export default function CustomerShowcase() {
       </button>
 
       {/* Quote */}
+      
       <div className="relative z-10 flex h-full w-full items-center justify-center px-6 ">
         <p className="max-w-3xl text-2xl font-medium pb-30 md:pb-0 leading-snug text-white md:text-3xl">
           “{active.quote}”

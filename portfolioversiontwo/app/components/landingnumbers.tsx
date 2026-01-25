@@ -1,5 +1,6 @@
 import React from 'react'
 import LogoMarquee from './LogoMarquee'
+import StatCard from './StatCard'
 
 const logos = [
   "/assets/asset23.png",
@@ -26,37 +27,13 @@ const Landingnumbers = () => {
         <div className='flex flex-col gap-6 pt-9 pb-15 md:pb-25'>
         
                         {/* FIRST DISPLAY */}
-                           
-                            <div className='h-150 md:h-32 flex flex-col md:flex-row gap-4 md:gap-6'>
-                                <div className='relative h-full md:flex-1 justify-center flex bg-gray-600/20 border border-white/10 rounded-2xl overflow-hidden'>
-                                    <div className='flex flex-col items-center justify-center gap-4'>
-                                    <p className='text-3xl lg:text-4xl font-medium lg:font-semibold'>12+</p>
-                                    <p className='text-base leading-6 font-medium text-gray-400'>Years of expertise</p>
-                                    </div>
-                            </div>
-                            
-                            <div className='relative h-full md:flex-1 justify-center flex bg-gray-600/20 border border-white/10 rounded-2xl overflow-hidden'>
-                                    <div className='flex flex-col items-center justify-center gap-4'>
-                                    <p className='text-3xl lg:text-4xl font-medium lg:font-semibold'>200+</p>
-                                    <p className='text-base leading-6 font-medium text-gray-400'>Completed projects</p>
-                                    </div>
-                            </div>
+                <div className="h-150 md:h-32 flex flex-col md:flex-row gap-4 md:gap-6">
+                <StatCard value={12} suffix="+" label="Years of expertise" />
+                <StatCard value={200} suffix="+" label="Completed projects" />
+                <StatCard value={50} suffix="M+" label="Revenue generated" />
+                <StatCard value={230} suffix="+" label="Satisfied clients" />
+                </div>
 
-                            <div className='relative h-full md:flex-1 justify-center flex bg-gray-600/20 border border-white/10 rounded-2xl overflow-hidden'>
-                                    <div className='flex flex-col items-center justify-center gap-4'>
-                                    <p className='text-3xl lg:text-4xl font-medium lg:font-semibold'>50M+</p>
-                                    <p className='text-base leading-6 font-medium text-gray-400'>Revenue generated</p>
-                                    </div>
-                            </div>
-
-                            <div className='relative h-full md:flex-1 justify-center flex bg-gray-600/20 border border-white/10 rounded-2xl overflow-hidden'>
-                                    <div className='flex flex-col items-center justify-center gap-4'>
-                                    <p className='text-3xl lg:text-4xl font-medium lg:font-semibold'>230+</p>
-                                    <p className='text-base leading-6 font-medium text-gray-400'>Satisfied clients</p>
-                                    </div>
-                            </div>
-
-                    </div>
                             
         
                     {/* SECOND DISPLAY */}

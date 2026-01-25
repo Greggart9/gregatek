@@ -21,3 +21,17 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.fade-text {
+  white-space: normal;
+  word-break: keep-all;
+}
+
+.fade-text .word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.fade-text .char {
+  display: inline-block;
+}

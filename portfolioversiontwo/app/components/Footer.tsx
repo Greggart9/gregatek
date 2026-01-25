@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Button from './Button'
 import RollTextLink from './textrolleffect'
+import TextReveal from './TextReveal'
 
 const Footer = () => {
   return (
@@ -68,11 +69,12 @@ const Footer = () => {
 
       <div className="flex justify-center flex-col gap-15 md:flex-row w-full md:justify-between px-3 md:px-10 pt-10 text-sm">
         {/* RIGHT */}
-
+        <TextReveal>
         <div className="text-2xl  md:text-xl lg:text-4xl w-80 md:w-60 lg:w-115 font-semibold lg:leading-11">
           <p>30+ projects shipped for startups and global teams.</p>
 
         </div>
+        </TextReveal>
 
         {/* LEFT */}
         <div className="flex md:w-120 justify-between font-semibold gap-5 sm:gap-10 wrap ">
@@ -92,7 +94,7 @@ const Footer = () => {
             href="mailto:hello@gregatek.agency"
            />
            <RollTextLink
-            label="+234 9079654499"
+            label="+44 20 1234 5678"
             href="tel:+2349079654499"
            />
           </span>

@@ -29,13 +29,13 @@ const page = () => {
           </div>
 
           {/* HERO CONTENT */}
-          <div className="relative z-10 flex items-center justify-center h-full text-center px-6">
+          <div className="relative z-10 flex items-center justify-center h-full text-center px-6 -mt-15">
             <div className="max-w-2xl text-white">
               <h1 className="text-4xl md:text-5xl font-semibold tracking-tight">
                 About us
               </h1>
 
-              <p className="mt-4 text-base md:text-lg text-white pb-20">
+              <p className="mt-4 text-base md:text-lg w-80 md:w-120 text-white pb-20">
                 Gregatek is a digital design studio shaping bold, modern,
                 meaningful brands and products.
               </p>

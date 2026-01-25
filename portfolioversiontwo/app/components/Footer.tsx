@@ -104,7 +104,7 @@ const Footer = () => {
           <ul className="space-y-3">
             <li className='text-lg'>Pages</li>
             <li><RollTextLink label='Home' href="/" className='text-sm' /></li>
-            <li><RollTextLink label='Projectss' href="/projects" className='text-sm' /></li>
+            <li><RollTextLink label='Projects' href="/projects" className='text-sm' /></li>
             <li><RollTextLink label='Services' href="/services" className='text-sm' /></li>
             <li><RollTextLink label='About us' href="/about" className='text-sm' /></li>
             <li><RollTextLink label='Blog' href="/blog" className='text-sm' /></li>

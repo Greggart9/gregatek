@@ -42,7 +42,7 @@ const Landingabout = () => {
         <h1 className="text-white text-[30px] md:text-[48px] xl:text-[56px] text-center tracking-normal leading-8 md:leading-13 xl:leading-16 font-medium max-w-2xl">
           Imagine a space between vision & impact
         </h1>
-        <p className="pt-4 font-medium leading-6 text-base">That’s where we make an impact.</p>
+        <p className="pt-4 font-medium text-white leading-6 text-base">That’s where we make an impact.</p>
         
         <div className="flex flex-col sm:flex-row gap-3 pt-6 md:pt-10">
           <Button

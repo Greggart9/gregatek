@@ -214,7 +214,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CUSTOMER NOTE */}
-      <section className="">
+      <section className="flex justify-center items-center">
         <TextReveal>
         <div
           className="mx-auto max-w-7xl rounded-2xl bg-cover bg-center px-8 py-20 md:px-16 lg:px-24"

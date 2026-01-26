@@ -58,8 +58,8 @@ const page = () => {
 
        {/* SECOND */}
        <TextReveal>
-      <div className=" flex  justify-center items-center w-full h-fit pt-15.5 sm:pt-21.5 pb-10 md:pt-31.5 md:pb-25 text-2xl md:text-[40px] xl:text-5xl">
-      <div className="">
+      <div className=" flex justify-center items-center w-full h-fit pt-15.5 sm:pt-21.5 pb-10 md:pt-31.5 md:pb-25 text-2xl md:text-[40px] xl:text-5xl">
+      <div className="flex justify-center items-center">
       
       {/* Content layer */}
       <div className=" font-medium w-90 md:w-xl lg:w-2xl leading-7 md:leading-9 xl:leading-13 fade-text">

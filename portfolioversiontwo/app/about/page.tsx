@@ -37,7 +37,7 @@ const page = () => {
           className="relative z-10 flex items-center justify-center h-full text-center px-6 -mt-15"
         >
           <div className="">
-            <div className="flex flex-col max-w-2xl text-white">
+            <div className="flex flex-col max-w-lg text-white">
               <span className="text-4xl md:text-5xl font-semibold tracking-tight">
                 About us
               </span>

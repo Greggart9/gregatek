@@ -12,23 +12,23 @@ type Customer = {
 }
 
 const customers: Customer[] = [
-  {
+    {
     id: 1,
-    name: 'Lena Brooks',
-    role: 'Founder, Nirvana Studio',
-    quote:
-      'With design and attention to detail, they improved our product — making it simple, clear, and enjoyable for users.',
-    avatar: '/videos/avatars/asset31.png',
-    video: '/videos/lena.mp4',
-  },
-  {
-    id: 2,
     name: 'David Lin',
     role: 'Co-founder, AeroSend',
     quote:
       'They didn’t just design screens — they thoughtfully created a clear, emotional, and lasting brand impact.',
     avatar: '/videos/avatars/asset32.png',
     video: '/videos/david.mp4',
+  },
+  {
+    id: 2,
+    name: 'Lena Brooks',
+    role: 'Founder, Nirvana Studio',
+    quote:
+      'With design and attention to detail, they improved our product — making it simple, clear, and enjoyable for users.',
+    avatar: '/videos/avatars/asset31.png',
+    video: '/videos/lena.mp4',
   },
   {
     id: 3,

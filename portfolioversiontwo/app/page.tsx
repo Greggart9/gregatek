@@ -8,6 +8,8 @@ import CustomerShowcase from './components/CustomerShowcase'
 import Faq from './components/FAQAccordion'
 import Footer from './components/Footer'
 
+
+
 const page = () => {
   return (
     <div className='relative flex flex-col min-h-screen m-3 md:m-6'>

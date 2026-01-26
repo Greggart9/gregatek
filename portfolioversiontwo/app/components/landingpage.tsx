@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import LiveClock from "./clock";
 import Button from "./Button";
 
+
 const Landingabout = () => {
   return (
     <div

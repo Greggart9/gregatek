@@ -129,7 +129,7 @@ const Footer = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="
-          text-[16vw] lg:text-[18vw] font-extrabold leading-none tracking-tight
+          text-[16vw] font-extrabold leading-none tracking-tight
             text-transparent bg-clip-text
             bg-linear-to-b from-white to-[#072ac8]
             select-none

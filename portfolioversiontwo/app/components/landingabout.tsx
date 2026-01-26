@@ -1,6 +1,5 @@
 import React from 'react'
 import Button from './Button'
-import FadeTextReveal from './FadeTextReveal'
 import TextReveal from './TextReveal'
 
 const Landingabout = () => {

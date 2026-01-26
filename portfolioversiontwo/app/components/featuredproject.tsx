@@ -5,7 +5,7 @@ import HoverCursor from './HoverCursor'
 
 const Featuredproject = () => {
   return (
-    <div className='flex flex-col h-fit py-12.5 '>
+    <div className='flex flex-col text-white h-fit py-12.5 '>
 
         {/* LETTER HEAD */}
         <div className='flex justify-between items-center'>

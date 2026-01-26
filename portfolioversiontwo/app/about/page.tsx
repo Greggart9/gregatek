@@ -13,7 +13,7 @@ import TextReveal from "../components/TextReveal";
 
 const page = () => {
   return (
-    <div className="relative m-3 sm:m-6">
+    <div className="relative m-3 sm:m-6 text-white">
       <div className="relative h-[calc(100vh-48px)] ">
         {/* HERO BACKGROUND */}
         <div className="relative w-full h-full rounded-2xl bg-[url('/assets/asset71.png')] bg-cover bg-center overflow-hidden">

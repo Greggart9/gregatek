@@ -17,7 +17,7 @@ const logos = [
 const Landingnumbers = () => {
   return (
     <>
-    <div className='flex flex-col h-fit pt-20 sm:pt-10 md:pt-25 '>
+    <div className='flex text-white flex-col h-fit pt-20 sm:pt-10 md:pt-25 '>
         {/* LETTER HEAD */}
         <div className='w-65'>
             <p className='text-2xl md:text-4xl font-semibold '>Numbers that speak volumes</p>

@@ -4,7 +4,7 @@ import TextReveal from './TextReveal'
 
 const Landingabout = () => {
   return (
-    <div className=" flex  justify-center items-center w-full h-fit pt-21.5 pb-10 md:pt-31.5 md:pb-25 text-2xl md:text-[40px] xl:text-5xl">
+    <div className=" flex text-white justify-center items-center w-full h-fit pt-21.5 pb-10 md:pt-31.5 md:pb-25 text-2xl md:text-[40px] xl:text-5xl">
       <div className="">
       {/* Content layer */}
       

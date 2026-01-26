@@ -18,7 +18,7 @@ const Landingservices = () => {
   return (
     <>
     
-    <div className='flex flex-col h-fit sm:pt-12.5 '>
+    <div className='text-white flex flex-col h-fit sm:pt-12.5 '>
         
         {/* LETTER HEAD */}
         <div className=''>

@@ -20,7 +20,8 @@ const page = () => {
       <CustomerShowcase />
       <Faq />
       <Footer />
-      
+
+
     </div>
 
     

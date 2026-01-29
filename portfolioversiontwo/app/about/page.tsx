@@ -34,7 +34,7 @@ const page = () => {
           initial={{ opacity: 0, scale: 0.7 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="relative z-10 flex items-center justify-center h-full text-center px-6 -mt-15"
+          className="relative z-10 flex items-center justify-center h-full text-center px-6"
         >
           <div className="">
             <div className="flex flex-col max-w-lg text-white">

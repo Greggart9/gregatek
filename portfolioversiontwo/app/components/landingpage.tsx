@@ -9,7 +9,7 @@ const Landingabout = () => {
     <div
       className="
         relative
-        w-full h-[calc(100vh-48px)] -mt-20
+        w-full h-[calc(100vh-48px)] 
         rounded-2xl
         overflow-hidden
       "

@@ -2,20 +2,39 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion'
+
 import RollTextLink from './textrolleffect'
+
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
 
+  const { scrollY } = useScroll()
+const [hidden, setHidden] = useState(false)
+
+useMotionValueEvent(scrollY, 'change', (current) => {
+  const previous = scrollY.getPrevious() ?? 0
+
+  if (current > previous && current > 120) {
+    setHidden(true) // scrolling down
+  } else {
+    setHidden(false) // scrolling up
+  }
+})
+
+
   return (
     <>
-      <header className="flex justify-center pt-6 px-6 z-40 relative">
+      <header className="fixed top-0 left-0 right-0 flex justify-center pt-6 px-6 z-40">
         <motion.nav
-          initial={{ y: -80, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          
+          animate={{
+            y: hidden ? '-120%' : '0%',
+            opacity: hidden ? 0 : 1,
+          }}
           transition={{
-            duration: 0.7,
+            duration: 0.35,
             ease: [0.22, 1, 0.36, 1],
           }}
           className="

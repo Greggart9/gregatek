@@ -1,4 +1,5 @@
 import { Project } from '@/app/data/projectsData'
+import Image from 'next/image'
 import HoverCursor from './HoverCursor'
 
 const ProjectCard = ({ project }: { project: Project }) => {
@@ -7,7 +8,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
      <HoverCursor label="View Details">
     <div className="relative group cursor-pointer rounded-2xl overflow-hidden">
       {/* image */}
-      <img
+      <Image
         src={project.image}
         alt={project.title}
         className="
@@ -15,6 +16,8 @@ const ProjectCard = ({ project }: { project: Project }) => {
           transition-transform duration-500
           group-hover:scale-105
         "
+        width={720}
+        height={325}
       />
 
       {/* overlay */}

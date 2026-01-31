@@ -12,18 +12,19 @@ const Landingabout = () => {
         w-full h-[calc(100vh-48px)] 
         rounded-2xl
         overflow-hidden
+       
       "
     >
       {/* BACKGROUND (scales first) */}
       <motion.div
-        initial={{ scale: 0.87 }}
+        initial={{ scale: 0.9 }}
         animate={{ scale: 1 }}
         transition={{
-          duration: 1.2,
+          duration: 1.6,
           ease: [0, 0, 0.2, 1],
         }}
         className="absolute inset-0 bg-cover bg-no-repeat bg-center"
-        style={{ backgroundImage: "url('/assets/land.jpg')" }}
+        style={{ backgroundImage: "url('/assets/land.jpg') " }}
       />
       {/* OVERLAY */}
       <div className="absolute inset-0 bg-black/40" />

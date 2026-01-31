@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion'
+import Image from 'next/image'
 
 import RollTextLink from './textrolleffect'
 
@@ -50,7 +51,7 @@ useMotionValueEvent(scrollY, 'change', (current) => {
         >
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <img className="h-7" src="/assets/gregaron.png" alt="Logo" />
+            <Image className="h-7" src="/assets/gregaron.png" alt="Logo" width={28} height={28} priority />
             <span className="font-inter font-semibold text-xl">Gregatek</span>
           </Link>
 
@@ -112,7 +113,7 @@ useMotionValueEvent(scrollY, 'change', (current) => {
             {/* Header */}
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
-                <img className="h-7" src="/assets/gregaron.png" alt="Logo" />
+                <Image className="h-7" src="/assets/gregaron.png" alt="Logo" width={28} height={28} />
                 <span className="font-semibold text-lg">Gregatek</span>
               </div>
 

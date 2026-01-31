@@ -11,7 +11,7 @@ const page = () => {
   return (
     <main className="h-fit m-6 pt-10 md:pt-20 bg-black text-white">
         {/* TOP */}
-      <section className="pb-24 h-290 md:h-150">
+      <section className="pb-24 mt-20 h-290  md:h-150">
         <div className="">
           <div className="grid grid-cols-1 gap-10 lg:gap-16 md:grid-cols-2">
             {/* LEFT */}

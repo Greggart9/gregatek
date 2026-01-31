@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef } from 'react'
+import Image from 'next/image'
 
 type Customer = {
   id: number
@@ -127,10 +128,12 @@ export default function CustomerShowcase() {
                 : 'bg-black/20 hover:bg-black/10'
             }`}
           >
-            <img
+            <Image
               src={customer.avatar}
               alt={customer.name}
               className="h-8 w-8 rounded-full object-cover"
+              width={32}
+              height={32}
             />
             <div className="text-left">
               <p className="text-sm font-medium text-white">

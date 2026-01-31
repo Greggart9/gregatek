@@ -1,6 +1,7 @@
 import React from 'react'
 import LogoMarquee from './LogoMarquee'
 import StatCard from './StatCard'
+import Image from 'next/image'
 
 const logos = [
   "/assets/asset23.png",
@@ -26,7 +27,7 @@ const Landingnumbers = () => {
         {/* SERVICES */}
         <div className='flex flex-col gap-6 pt-9 pb-15 md:pb-25'>
         
-                        {/* FIRST DISPLAY */}
+                {/* FIRST DISPLAY */}
                 <div className="h-150 md:h-32 flex flex-col md:flex-row gap-4 md:gap-6">
                 <StatCard value={12} suffix="+" label="Years of expertise" />
                 <StatCard value={200} suffix="+" label="Completed projects" />
@@ -57,7 +58,7 @@ const Landingnumbers = () => {
 
                                         {/* THE IMAGE */}
                                     <div className='flex justify-center h-full pt-13 md:pt-25'>
-                                        <img src="/assets/asset22.png" alt="" className='px-2 sm:px-10 lg:px-25 pt-16 pb-12.5' />
+                                        <Image src="/assets/asset22.png" alt="" className='px-2 sm:px-10 lg:px-25 pt-16 pb-12.5' width={1600} height={1600} />
                                     </div>
                                 </div>
         

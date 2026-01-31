@@ -32,8 +32,8 @@ const Featuredproject = () => {
                             <div className='flex flex-col pl-7 gap-1.5 md:gap-3 absolute bottom-8 z-10'>
                             <p className='text-3xl font-semibold'>Solitone</p>
                             <div className='flex gap-3'>
-                                <TransparentButton href="/projects/solitone" label="Branding" />
-                                <TransparentButton href="/projects/solitone" label="Motion design" />
+                                <TransparentButton href="/projects" label="Branding" />
+                                <TransparentButton href="/projects" label="Motion design" />
                             </div>
                             </div>
                         </div>
@@ -43,8 +43,8 @@ const Featuredproject = () => {
                             <div className='flex flex-col pl-7 gap-1.5 md:gap-3 absolute bottom-8 z-10'>
                             <p className='text-3xl font-semibold'>Creer</p>
                             <div className='flex gap-3'>
-                                <TransparentButton href="/projects/creer" label="Development" />
-                                <TransparentButton href="/projects/creer" label="Web design" />
+                                <TransparentButton href="/projects" label="Development" />
+                                <TransparentButton href="/projects" label="Web design" />
                             </div>
                             </div>
                         </div>
@@ -60,8 +60,8 @@ const Featuredproject = () => {
                             <div className='flex flex-col pl-7 gap-1.5 md:gap-3 absolute bottom-8 z-10'>
                             <p className='text-3xl font-semibold'>Nirvana</p>
                             <div className='flex flex-col sm:flex-row gap-3'>
-                                <TransparentButton href="/projects/nirvana" label="AI-powered solution" />
-                                <TransparentButton href="/projects/nirvana" label="Mobile app design" />
+                                <TransparentButton href="/projects" label="AI-powered solution" />
+                                <TransparentButton href="/projects" label="Mobile app design" />
                             </div>
                             </div>
                         </div>
@@ -78,8 +78,8 @@ const Featuredproject = () => {
                             <div className='flex flex-col pl-7 gap-1.5 md:gap-3 absolute bottom-8 z-10'>
                             <p className='text-3xl font-semibold'>Fanoos</p>
                             <div className='flex gap-3'>
-                                <TransparentButton href="/projects/fanoos" label="3D design" />
-                                <TransparentButton href="/projects/fanoos" label="SaaS" />
+                                <TransparentButton href="/projects" label="3D design" />
+                                <TransparentButton href="/projects" label="SaaS" />
                             </div>
                             </div>
                         </div>
@@ -89,8 +89,8 @@ const Featuredproject = () => {
                             <div className='flex flex-col pl-7 gap-1.5 md:gap-3 absolute bottom-8 z-10'>
                             <p className='text-3xl font-semibold'>Aurora</p>
                             <div className='flex gap-3'>
-                                <TransparentButton href="/projects/aurora" label="SaaS" />
-                                <TransparentButton href="/projects/aurora" label="AI-powered solution" />
+                                <TransparentButton href="/projects" label="SaaS" />
+                                <TransparentButton href="/projects" label="AI-powered solution" />
                             </div>
                             </div>
                     </div>
@@ -101,8 +101,8 @@ const Featuredproject = () => {
                             <div className='flex flex-col pl-7 gap-1.5 md:gap-3 absolute bottom-8 z-10'>
                             <p className='text-3xl font-semibold'>Staurn</p>
                             <div className='flex flex-col sm:flex-row gap-3'>
-                                <TransparentButton href="/projects/staurn" label="Motion design" />
-                                <TransparentButton href="/projects/staurn" label="Development" />
+                                <TransparentButton href="/projects" label="Motion design" />
+                                <TransparentButton href="/projects" label="Development" />
                             </div>
                             </div>
                     </div>  

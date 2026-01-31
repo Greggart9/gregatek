@@ -2,6 +2,7 @@
 
 import { motion, useAnimation } from 'framer-motion'
 import { useEffect } from 'react'
+import Image from 'next/image'
 
 type LogoMarqueeProps = {
   logos: string[]
@@ -58,11 +59,13 @@ export default function LogoMarquee({
         animate={controls}
       >
         {[...logos, ...logos].map((src, i) => (
-          <img
+          <Image
             key={i}
             src={src}
             alt=""
             className="h-12 w-auto transition"
+            width={48}
+            height={48}
           />
         ))}
       </motion.div>

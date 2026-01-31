@@ -15,11 +15,11 @@ export default function ServicesPage() {
           initial={{ opacity: 0, scale: 0.7 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="w-full flex flex-col text-white justify-center items-center h-70 md:h-80 text-center"
+          className="w-full flex flex-col text-white justify-center mt-20 items-center h-80 md:h-100 text-center"
         >
-        <h1 className="text-3xl md:text-5xl font-semibold tracking-tight">Our Services</h1>
+        <h1 className="text-3xl md:text-5xl  font-semibold tracking-tight">Our Services</h1>
 
-        <p className="mt-3 md:mt-6 w-75 md:w-120 ">
+        <p className="mt-3 md:mt-6 w-85 md:w-120 ">
           We create design solutions that blend strategy, creativity, and clarity helping brands grow and products feel effortless.
         </p>
         </motion.div>

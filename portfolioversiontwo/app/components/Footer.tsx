@@ -113,7 +113,7 @@ const Footer = () => {
 
           <ul className="space-y-3 ">
             <li className='text-lg'>Links</li>
-            <li><RollTextLink label='Linkedin' target="_blank" href="https://www.linkedin.com/in/oluwadamilare-ogundare-89aa75246/" className='text-sm'/></li>
+            <li><RollTextLink label='Linkedin' target="_blank" href="https://www.linkedin.com/in/oluwadamilaregreggart9/" className='text-sm'/></li>
             <li><RollTextLink label='X' target="_blank" href="https://x.com/Oluwad_amilare" className='text-sm' /></li>
             <li><RollTextLink label='Instagram' target="_blank" href="https://www.instagram.com/greggart9/?hl=en" className='text-sm' /></li>
             <li><RollTextLink label='Upwork' target="_blank" href="https://www.upwork.com/freelancers/~01f4206c2db39023fa" className='text-sm' /></li>
